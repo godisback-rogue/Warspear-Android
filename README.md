@@ -1,6 +1,6 @@
 # ws-android — Warspear Online SDK (Android port)
 
-Port do SDK Linux [`ws-hack2`](https://github.com/lucas-freitas00/ws-hack2) para Android, focado em **devices não-rooteados em produção** (root só é usado em dev pra mascarar detecções de emulador). Roda em emuladores ARM-on-x86 (LDPlayer, Bluestacks, etc.) e diretamente em hardware ARM real.
+Port do SDK Linux [`ws-sdk`](https://github.com/godisback-rogue/Warspear-LINUX/tree/main) para Android, focado em **devices não-rooteados em produção** (root só é usado em dev pra mascarar detecções de emulador). Roda em emuladores ARM-on-x86 (LDPlayer, Bluestacks, etc.) e diretamente em hardware ARM real.
 ---
 
 <img width="322" height="616" alt="image" src="https://github.com/user-attachments/assets/b5a5a051-c595-492f-af5d-d5165b7bdfb1" />
