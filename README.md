@@ -1,11 +1,17 @@
 # ws-android — Warspear Online SDK (Android port)
 
 Port do SDK Linux [`ws-hack2`](https://github.com/lucas-freitas00/ws-hack2) para Android, focado em **devices não-rooteados em produção** (root só é usado em dev pra mascarar detecções de emulador). Roda em emuladores ARM-on-x86 (LDPlayer, Bluestacks, etc.) e diretamente em hardware ARM real.
+---
+
+<img width="322" height="616" alt="image" src="https://github.com/user-attachments/assets/b5a5a051-c595-492f-af5d-d5165b7bdfb1" />
+
+---
 
 > **Versão alvo do jogo:** Warspear Online **13.3.0** (`com.aigrind.warspear`)
 > **ABIs suportadas:** `arm64-v8a` (primária) e `armeabi-v7a`
 
 ---
+
 
 > ### 🕯️ Por que este projeto é público
 >
