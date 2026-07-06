@@ -1,0 +1,43 @@
+# Build outputs
+build/
+build-*/
+*.o
+*.so
+*.a
+*.apk
+*.apks
+*.aab
+*.idsig
+
+# External tools downloaded by setup_apk_tools.sh — not tracked
+tools/apktool.jar
+tools/uber-apk-signer.jar
+
+# Third-party libs — cloned by tools/setup_third_party.sh
+third_party/
+
+# Probe outputs
+/tmp/bss_*.txt
+/tmp/bss_*.bin
+
+# APK working dirs
+apk/extracted/
+apk/repacked/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+.cxx/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Captured data (large, regenerated)
+data/baseline_*.json
+data/dump_*.json
+
+# Keys (keep keystore out of repo)
+*.keystore
+*.jks

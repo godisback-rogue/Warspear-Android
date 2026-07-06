@@ -1,0 +1,4795 @@
+{
+  "verified_count": 8,
+  "calibrated_count": 3,
+  "predicted_count": 521,
+  "fields": [
+    {
+      "namespace": "BSS",
+      "name": "AppState",
+      "linux_offset": 14550832,
+      "arm64_offset": 14550832,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 main game state singleton (Ghidra: DAT_00DF0730)"
+    },
+    {
+      "namespace": "BSS",
+      "name": "GlobalSystemInstance",
+      "linux_offset": 14602336,
+      "arm64_offset": 14602344,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 GSI (vtable RVA 0xDC548C)"
+    },
+    {
+      "namespace": "BSS",
+      "name": "EntityManager",
+      "linux_offset": 14602472,
+      "arm64_offset": 14602488,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 instance (vtable RVA 0xDC5B68)"
+    },
+    {
+      "namespace": "BSS",
+      "name": "OtherManager",
+      "linux_offset": 14604624,
+      "arm64_offset": 14604648,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 instance (vtable RVA 0xDC81CC)"
+    },
+    {
+      "namespace": "AppState",
+      "name": "GameManager",
+      "linux_offset": 20,
+      "arm64_offset": 24,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 GM (0x4528 bytes). Same object as GSI+0x28 chain."
+    },
+    {
+      "namespace": "AppState",
+      "name": "SessionMgr",
+      "linux_offset": 24,
+      "arm64_offset": 32,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 Connection/session manager"
+    },
+    {
+      "namespace": "AppState",
+      "name": "PaymentMgr",
+      "linux_offset": 36,
+      "arm64_offset": 48,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 Payment/auth subsystem"
+    },
+    {
+      "namespace": "AppState",
+      "name": "SceneManager",
+      "linux_offset": 48,
+      "arm64_offset": 64,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 Scene/World manager"
+    },
+    {
+      "namespace": "AppState",
+      "name": "ChatManager",
+      "linux_offset": 52,
+      "arm64_offset": 72,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 Chat/Social manager (+0x57F=enabled, +0x114=channel)"
+    },
+    {
+      "namespace": "AppState",
+      "name": "ItemDataTable",
+      "linux_offset": 72,
+      "arm64_offset": 96,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 Item definitions (binary tree, FUN_0096A450)"
+    },
+    {
+      "namespace": "AppState",
+      "name": "MonsterDataTable",
+      "linux_offset": 80,
+      "arm64_offset": 112,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 MonsterData_v2 (binary tree, FUN_0095BA30)"
+    },
+    {
+      "namespace": "AppState",
+      "name": "GuildSkillDT",
+      "linux_offset": 140,
+      "arm64_offset": 176,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 Guild skill info"
+    },
+    {
+      "namespace": "AppState",
+      "name": "SkillDataTable",
+      "linux_offset": 152,
+      "arm64_offset": 192,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 Skill definitions (FUN_00934490)"
+    },
+    {
+      "namespace": "AppState",
+      "name": "AchievGroupDT",
+      "linux_offset": 204,
+      "arm64_offset": 248,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 Achievement groups"
+    },
+    {
+      "namespace": "AppState",
+      "name": "AchievGoalDT",
+      "linux_offset": 208,
+      "arm64_offset": 256,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 Achievement goals"
+    },
+    {
+      "namespace": "AppState",
+      "name": "InfluenceDT",
+      "linux_offset": 212,
+      "arm64_offset": 264,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 Influence/buff definitions (FUN_0093AA20)"
+    },
+    {
+      "namespace": "AppState",
+      "name": "InfluenceDescDT",
+      "linux_offset": 216,
+      "arm64_offset": 272,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 Influence descriptors extended"
+    },
+    {
+      "namespace": "AppState",
+      "name": "CastleBuildingDT",
+      "linux_offset": 232,
+      "arm64_offset": 296,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 Castle buildings"
+    },
+    {
+      "namespace": "AppState",
+      "name": "TalentDT",
+      "linux_offset": 264,
+      "arm64_offset": 336,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 Talent definitions (FUN_0093F7F0)"
+    },
+    {
+      "namespace": "AppState",
+      "name": "TalentTreeDT",
+      "linux_offset": 268,
+      "arm64_offset": 344,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 Talent tree records"
+    },
+    {
+      "namespace": "AppState",
+      "name": "TerritoryDT",
+      "linux_offset": 284,
+      "arm64_offset": 368,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 Territory data"
+    },
+    {
+      "namespace": "AppState",
+      "name": "SectorWorldDT",
+      "linux_offset": 288,
+      "arm64_offset": 376,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 Sector/World DataTable (World_Data.cpp)"
+    },
+    {
+      "namespace": "AppState",
+      "name": "InteractObjDT",
+      "linux_offset": 292,
+      "arm64_offset": 384,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 Interactive object definitions"
+    },
+    {
+      "namespace": "AppState",
+      "name": "ClassDT",
+      "linux_offset": 296,
+      "arm64_offset": 392,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 Class definitions (1-20, FUN_00943B60)"
+    },
+    {
+      "namespace": "AppState",
+      "name": "CurrencyDT",
+      "linux_offset": 308,
+      "arm64_offset": 408,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 Currency definitions (gold, miracle coins)"
+    },
+    {
+      "namespace": "AppState",
+      "name": "ItemFilterDT",
+      "linux_offset": 316,
+      "arm64_offset": 424,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 Item filter categories"
+    },
+    {
+      "namespace": "AppState",
+      "name": "ExpansionOfferDT",
+      "linux_offset": 324,
+      "arm64_offset": 440,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 Expansion offers"
+    },
+    {
+      "namespace": "AppState",
+      "name": "SummonSkillDT",
+      "linux_offset": 348,
+      "arm64_offset": 472,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 Summon skill data"
+    },
+    {
+      "namespace": "AppState",
+      "name": "GenericDescDT",
+      "linux_offset": 360,
+      "arm64_offset": 488,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 Generic descriptors"
+    },
+    {
+      "namespace": "AppState",
+      "name": "SkillDT2",
+      "linux_offset": 384,
+      "arm64_offset": 520,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 Skill DataTable (from packet handlers)"
+    },
+    {
+      "namespace": "AppState",
+      "name": "NotificationMgr",
+      "linux_offset": 408,
+      "arm64_offset": 552,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 Notification subsystem"
+    },
+    {
+      "namespace": "AppState",
+      "name": "AccountInfo",
+      "linux_offset": 480,
+      "arm64_offset": 628,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "obj embedded account data structure"
+    },
+    {
+      "namespace": "AppState",
+      "name": "AuthState",
+      "linux_offset": 520,
+      "arm64_offset": 668,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 auth/login state flag"
+    },
+    {
+      "namespace": "AppState",
+      "name": "ServerId",
+      "linux_offset": 968,
+      "arm64_offset": 1116,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 server ID (written by LoginManager from ws_config.xml)"
+    },
+    {
+      "namespace": "AppState",
+      "name": "SceneData",
+      "linux_offset": 972,
+      "arm64_offset": 1120,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 scene/area data"
+    },
+    {
+      "namespace": "AccountInfo",
+      "name": "CD_ServerId",
+      "linux_offset": 0,
+      "arm64_offset": 0,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 game server id"
+    },
+    {
+      "namespace": "AccountInfo",
+      "name": "CD_CharId",
+      "linux_offset": 4,
+      "arm64_offset": 4,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 character id"
+    },
+    {
+      "namespace": "AccountInfo",
+      "name": "CD_NamePtr",
+      "linux_offset": 12,
+      "arm64_offset": 16,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 ASCII name (SSO at +0x18)"
+    },
+    {
+      "namespace": "AccountInfo",
+      "name": "CD_NameSize",
+      "linux_offset": 20,
+      "arm64_offset": 28,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 name length"
+    },
+    {
+      "namespace": "AccountInfo",
+      "name": "CharArrayBase",
+      "linux_offset": 116,
+      "arm64_offset": 128,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 character entry array"
+    },
+    {
+      "namespace": "AccountInfo",
+      "name": "CharCount",
+      "linux_offset": 120,
+      "arm64_offset": 136,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 number of characters"
+    },
+    {
+      "namespace": "AccountInfo",
+      "name": "ServerArray",
+      "linux_offset": 600,
+      "arm64_offset": 616,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 server name array (stride 0x5C)"
+    },
+    {
+      "namespace": "AccountInfo",
+      "name": "ServerCount",
+      "linux_offset": 604,
+      "arm64_offset": 624,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 number of servers"
+    },
+    {
+      "namespace": "AccountInfo",
+      "name": "SelectedIdx",
+      "linux_offset": 608,
+      "arm64_offset": 628,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 currently selected index"
+    },
+    {
+      "namespace": "AccountInfo",
+      "name": "CallbackPtr",
+      "linux_offset": 612,
+      "arm64_offset": 632,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 callback object"
+    },
+    {
+      "namespace": "AccountInfo",
+      "name": "CallbackInner",
+      "linux_offset": 616,
+      "arm64_offset": 640,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 callback inner"
+    },
+    {
+      "namespace": "SceneMgr",
+      "name": "ViewCtrl",
+      "linux_offset": 452,
+      "arm64_offset": 456,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 view controller object"
+    },
+    {
+      "namespace": "SceneMgr",
+      "name": "CallbackPtr",
+      "linux_offset": 1456,
+      "arm64_offset": 1464,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 refcounted callback object (for SceneTransition)"
+    },
+    {
+      "namespace": "SceneMgr",
+      "name": "CallbackCtx",
+      "linux_offset": 1460,
+      "arm64_offset": 1472,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 callback context"
+    },
+    {
+      "namespace": "SceneMgr",
+      "name": "FormRef",
+      "linux_offset": 4288,
+      "arm64_offset": 4304,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 form reference (passed to FormShow)"
+    },
+    {
+      "namespace": "ViewCtrl",
+      "name": "ViewMode",
+      "linux_offset": 12828,
+      "arm64_offset": 12828,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 current view mode param"
+    },
+    {
+      "namespace": "ViewCtrl",
+      "name": "SceneId",
+      "linux_offset": 12852,
+      "arm64_offset": 12852,
+      "type": "u16",
+      "status": "PREDICTED",
+      "comment": "u16 current scene ID (5=news popup, 4=post-popup)"
+    },
+    {
+      "namespace": "ViewCtrl",
+      "name": "SceneFlag",
+      "linux_offset": 12854,
+      "arm64_offset": 12854,
+      "type": "u8",
+      "status": "PREDICTED",
+      "comment": "u8 scene transition flag"
+    },
+    {
+      "namespace": "GSI",
+      "name": "GameManager",
+      "linux_offset": 40,
+      "arm64_offset": 40,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 real GameManager (heap)"
+    },
+    {
+      "namespace": "GM",
+      "name": "EntityTree",
+      "linux_offset": 28,
+      "arm64_offset": 32,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 EntityTreeHeader \u2192 [+0] = root node  (real_GM+0x38)"
+    },
+    {
+      "namespace": "GM",
+      "name": "Player",
+      "linux_offset": 32,
+      "arm64_offset": 40,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 Container* (LocalPlayer)  (real_GM+0x3C)"
+    },
+    {
+      "namespace": "GM",
+      "name": "CorpseTree",
+      "linux_offset": 40,
+      "arm64_offset": 56,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 CorpseTreeHeader (dead mobs with loot) (real_GM+0x44)"
+    },
+    {
+      "namespace": "GM",
+      "name": "ObjTree",
+      "linux_offset": 48,
+      "arm64_offset": 72,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 InteractiveObjectsTree (portals, doors, altars)"
+    },
+    {
+      "namespace": "GM",
+      "name": "NpcTracking",
+      "linux_offset": 52,
+      "arm64_offset": 80,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 container (appears after first quest accept)"
+    },
+    {
+      "namespace": "GM",
+      "name": "LocalPlayer",
+      "linux_offset": 60,
+      "arm64_offset": 96,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 Container* (confirmed: Inventory, SkillsManager)"
+    },
+    {
+      "namespace": "GM",
+      "name": "ActionQueue",
+      "linux_offset": 128,
+      "arm64_offset": 168,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "obj combat action queue (ActionQueue.cpp)"
+    },
+    {
+      "namespace": "GM",
+      "name": "PlayerLevel",
+      "linux_offset": 160,
+      "arm64_offset": 200,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 local player level"
+    },
+    {
+      "namespace": "GM",
+      "name": "BagTier",
+      "linux_offset": 164,
+      "arm64_offset": 204,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 bag expansion level (< 5) (ItemsManager.cpp)"
+    },
+    {
+      "namespace": "GM",
+      "name": "SkillsManager",
+      "linux_offset": 168,
+      "arm64_offset": 208,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "SkillsManager embedded object. Access: player->gm_ptr + 0xA8"
+    },
+    {
+      "namespace": "GM",
+      "name": "TargetMgr",
+      "linux_offset": 168,
+      "arm64_offset": 208,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "obj target selection manager (LocalPlayer.cpp)"
+    },
+    {
+      "namespace": "GM",
+      "name": "ItemsManager",
+      "linux_offset": 308,
+      "arm64_offset": 352,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "obj ItemsManager (Ghidra: FUN_00872790)"
+    },
+    {
+      "namespace": "GM",
+      "name": "InventoryMgr",
+      "linux_offset": 412,
+      "arm64_offset": 456,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "obj inventory sub-manager (Inventory.cpp)"
+    },
+    {
+      "namespace": "GM",
+      "name": "CurrencyBST",
+      "linux_offset": 544,
+      "arm64_offset": 592,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr* currency amounts BST header (real_GM+0x23C, shifted: -0x1C = 0x220)"
+    },
+    {
+      "namespace": "GM",
+      "name": "QuestProgressMgr",
+      "linux_offset": 756,
+      "arm64_offset": 808,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "obj QuestManager (observer pattern) \u2014 real_GM+0x310"
+    },
+    {
+      "namespace": "GM",
+      "name": "QuestDialogId",
+      "linux_offset": 812,
+      "arm64_offset": 864,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 quest ID of current dialog (0 if none)"
+    },
+    {
+      "namespace": "GM",
+      "name": "QuestDialogFlags",
+      "linux_offset": 816,
+      "arm64_offset": 868,
+      "type": "u8",
+      "status": "PREDICTED",
+      "comment": "u8[4] {state, 1, sub_state, 0}"
+    },
+    {
+      "namespace": "GM",
+      "name": "QuestDialogVectors",
+      "linux_offset": 820,
+      "arm64_offset": 872,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "vector of UI elements for dialog"
+    },
+    {
+      "namespace": "GM",
+      "name": "QuestDialogProgress",
+      "linux_offset": 888,
+      "arm64_offset": 944,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 struct with quest_id at +0x08"
+    },
+    {
+      "namespace": "GM",
+      "name": "QuestDialogId2",
+      "linux_offset": 896,
+      "arm64_offset": 956,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 quest ID duplicate (current dialog)"
+    },
+    {
+      "namespace": "GM",
+      "name": "QuestListPtr",
+      "linux_offset": 924,
+      "arm64_offset": 984,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 array of quest entry pointers"
+    },
+    {
+      "namespace": "GM",
+      "name": "QuestListCount",
+      "linux_offset": 928,
+      "arm64_offset": 992,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 count of active quests"
+    },
+    {
+      "namespace": "GM",
+      "name": "CombatDisplay",
+      "linux_offset": 1128,
+      "arm64_offset": 1192,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "obj combat floating numbers manager"
+    },
+    {
+      "namespace": "GM",
+      "name": "PartyManager",
+      "linux_offset": 1136,
+      "arm64_offset": 1200,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "obj PartyManager (+0x20=member tree, +0x24=leader key)"
+    },
+    {
+      "namespace": "GM",
+      "name": "MinimapMgr",
+      "linux_offset": 1176,
+      "arm64_offset": 1240,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "obj MinimapManager (entity_key\u2192hp%, alive, type)"
+    },
+    {
+      "namespace": "GM",
+      "name": "LootManager",
+      "linux_offset": 1224,
+      "arm64_offset": 1292,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "obj LootManager (Ghidra: handler uses real_GM+0x4e4, shifted: -0x1C = 0x4C8)"
+    },
+    {
+      "namespace": "GM",
+      "name": "QuestProgressSub",
+      "linux_offset": 1552,
+      "arm64_offset": 1620,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "obj quest progress sub-manager (Ghidra: FUN_00842E90)"
+    },
+    {
+      "namespace": "GM",
+      "name": "RegionId",
+      "linux_offset": 1572,
+      "arm64_offset": 1640,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 territory_id (key for area_names.json: \"{mapzone}_{tid}\")"
+    },
+    {
+      "namespace": "GM",
+      "name": "QuestUIState",
+      "linux_offset": 1784,
+      "arm64_offset": 1852,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "obj quest UI state (Ghidra: FUN_0084CC10)"
+    },
+    {
+      "namespace": "GM",
+      "name": "RegionIdNew",
+      "linux_offset": 1838,
+      "arm64_offset": 1906,
+      "type": "u16",
+      "status": "PREDICTED",
+      "comment": "u16 region_id (from ExplorationData)"
+    },
+    {
+      "namespace": "GM",
+      "name": "DungeonFlag",
+      "linux_offset": 2076,
+      "arm64_offset": 2144,
+      "type": "u8",
+      "status": "PREDICTED",
+      "comment": "u8 is dungeon"
+    },
+    {
+      "namespace": "GM",
+      "name": "DungeonId",
+      "linux_offset": 2080,
+      "arm64_offset": 2148,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 dungeon instance ID"
+    },
+    {
+      "namespace": "GM",
+      "name": "PacketSendQueue",
+      "linux_offset": 4120,
+      "arm64_offset": 4188,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "obj outgoing packet queue (SkillsManager.cpp)"
+    },
+    {
+      "namespace": "GM",
+      "name": "ZoneId",
+      "linux_offset": 4152,
+      "arm64_offset": 4220,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 game zone ID (not same as map file zone!)"
+    },
+    {
+      "namespace": "GM",
+      "name": "CursorBlocked",
+      "linux_offset": 4340,
+      "arm64_offset": 4408,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 0=walkable, 1=blocked (tile under mouse)"
+    },
+    {
+      "namespace": "GM",
+      "name": "Camera",
+      "linux_offset": 4588,
+      "arm64_offset": 4656,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 Camera Object"
+    },
+    {
+      "namespace": "GM",
+      "name": "CursorStruct",
+      "linux_offset": 4596,
+      "arm64_offset": 4672,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr cursor/tile selection struct"
+    },
+    {
+      "namespace": "GM",
+      "name": "LoginToken",
+      "linux_offset": 4644,
+      "arm64_offset": 4724,
+      "type": "u16",
+      "status": "PREDICTED",
+      "comment": "u16 auth token (2 bytes, set by Handler_LoginResult on success)"
+    },
+    {
+      "namespace": "GM",
+      "name": "ZoneMeta",
+      "linux_offset": 4648,
+      "arm64_offset": 4728,
+      "type": "u16",
+      "status": "PREDICTED",
+      "comment": "u16 zone metadata block start"
+    },
+    {
+      "namespace": "GM",
+      "name": "SessionActive",
+      "linux_offset": 4856,
+      "arm64_offset": 4936,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 1=session active (set by Handler_CharacterList after char list received)"
+    },
+    {
+      "namespace": "GM",
+      "name": "CollisionGrid",
+      "linux_offset": 5472,
+      "arm64_offset": 5552,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 collision grid struct (GDB confirmed, Ghidra FUN_008C1C60)"
+    },
+    {
+      "namespace": "GM",
+      "name": "MapView",
+      "linux_offset": 5504,
+      "arm64_offset": 5592,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr MapViewContainer (0x230 bytes, world map)"
+    },
+    {
+      "namespace": "GM",
+      "name": "QuestTracker",
+      "linux_offset": 5572,
+      "arm64_offset": 5664,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr quest tracking enable/disable (Ghidra: FUN_007F8580)"
+    },
+    {
+      "namespace": "GM",
+      "name": "QuestEntryEnd",
+      "linux_offset": 5588,
+      "arm64_offset": 5688,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr quest entry array end (Ghidra: FUN_0031FDC0)"
+    },
+    {
+      "namespace": "GM",
+      "name": "QuestEntryBegin",
+      "linux_offset": 5596,
+      "arm64_offset": 5704,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr quest entry array begin"
+    },
+    {
+      "namespace": "GM",
+      "name": "QuestEntryCount2",
+      "linux_offset": 5600,
+      "arm64_offset": 5712,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 quest entry count (internal, may differ from +0x3A0)"
+    },
+    {
+      "namespace": "GM",
+      "name": "HandlerTable",
+      "linux_offset": 5648,
+      "arm64_offset": 5760,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "arr packet handler table (602 slots \u00d7 8B)"
+    },
+    {
+      "namespace": "GM",
+      "name": "HandlerTableEnd",
+      "linux_offset": 10464,
+      "arm64_offset": 10576,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "handler table end"
+    },
+    {
+      "namespace": "GM",
+      "name": "PacketStats",
+      "linux_offset": 10468,
+      "arm64_offset": 10580,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "arr per-opcode counters (opcode \u00d7 0xC)"
+    },
+    {
+      "namespace": "GM",
+      "name": "AreaList",
+      "linux_offset": 11648,
+      "arm64_offset": 11760,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "array of 12B entries: {count1:u32, count2:u32, area_id:u32}"
+    },
+    {
+      "namespace": "ConnectMgr",
+      "name": "IsConnected",
+      "linux_offset": 20,
+      "arm64_offset": 20,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 non-zero if network connection active"
+    },
+    {
+      "namespace": "ConnectMgr",
+      "name": "ConnectionState",
+      "linux_offset": 136,
+      "arm64_offset": 136,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 current connection phase"
+    },
+    {
+      "namespace": "Container",
+      "name": "VTable",
+      "linux_offset": 0,
+      "arm64_offset": 0,
+      "type": "ptr",
+      "status": "VERIFIED",
+      "comment": "ptr \u2192 .rodata vtable"
+    },
+    {
+      "namespace": "Container",
+      "name": "Type",
+      "linux_offset": 4,
+      "arm64_offset": 8,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 3=SELF, 1=OTHER (player/NPC/mob)"
+    },
+    {
+      "namespace": "Container",
+      "name": "EquipStride",
+      "linux_offset": 8,
+      "arm64_offset": 12,
+      "type": "u8",
+      "status": "PREDICTED",
+      "comment": "bytes between equipment slots"
+    },
+    {
+      "namespace": "Container",
+      "name": "PosPacked",
+      "linux_offset": 8,
+      "arm64_offset": 12,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 tile_x = bits[31:16], tile_y = bits[15:0]"
+    },
+    {
+      "namespace": "Container",
+      "name": "PosState",
+      "linux_offset": 12,
+      "arm64_offset": 16,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 changes with movement (not a direct coord)"
+    },
+    {
+      "namespace": "Container",
+      "name": "WorldX",
+      "linux_offset": 16,
+      "arm64_offset": 20,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 16.16 fixed point. Upper 16 = 24*tile_y + 12"
+    },
+    {
+      "namespace": "Container",
+      "name": "WorldY",
+      "linux_offset": 20,
+      "arm64_offset": 24,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 16.16 fixed point. Upper 16 = 24*tile_x + 12"
+    },
+    {
+      "namespace": "Container",
+      "name": "TeamColor",
+      "linux_offset": 28,
+      "arm64_offset": 32,
+      "type": "u8",
+      "status": "PREDICTED",
+      "comment": "u8 team color byte (0xFF=unset). Ghidra: FUN_008C2F30"
+    },
+    {
+      "namespace": "Container",
+      "name": "ScaleX",
+      "linux_offset": 48,
+      "arm64_offset": 52,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 16.16 fixed (0x10000=1.0). Ghidra: BaseObject ctor"
+    },
+    {
+      "namespace": "Container",
+      "name": "ScaleY",
+      "linux_offset": 52,
+      "arm64_offset": 56,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 16.16 fixed (0x10000=1.0). Ghidra: BaseObject ctor"
+    },
+    {
+      "namespace": "Container",
+      "name": "SelfPtr",
+      "linux_offset": 56,
+      "arm64_offset": 64,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr points to self (validation invariant)"
+    },
+    {
+      "namespace": "Container",
+      "name": "WStringObj",
+      "linux_offset": 88,
+      "arm64_offset": 128,
+      "type": "wstring",
+      "status": "CALIBRATED",
+      "comment": "12B std::wstring {_M_p(4), capacity(4), length(4)}"
+    },
+    {
+      "namespace": "Container",
+      "name": "WStringPtr",
+      "linux_offset": 88,
+      "arm64_offset": 128,
+      "type": "ptr",
+      "status": "VERIFIED",
+      "comment": "ptr _M_p: data pointer (SSO: points to +0x064)"
+    },
+    {
+      "namespace": "Container",
+      "name": "WStringCap",
+      "linux_offset": 92,
+      "arm64_offset": 136,
+      "type": "u32",
+      "status": "CALIBRATED",
+      "comment": "u32 capacity (19 = SSO)"
+    },
+    {
+      "namespace": "Container",
+      "name": "WStringLen",
+      "linux_offset": 96,
+      "arm64_offset": 140,
+      "type": "u32",
+      "status": "VERIFIED",
+      "comment": "u32 length in wchars"
+    },
+    {
+      "namespace": "Container",
+      "name": "NameData",
+      "linux_offset": 100,
+      "arm64_offset": 144,
+      "type": "u8",
+      "status": "VERIFIED",
+      "comment": "wchar_t[] name UTF-32LE (4 bytes/char)"
+    },
+    {
+      "namespace": "Container",
+      "name": "SubType",
+      "linux_offset": 184,
+      "arm64_offset": 228,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 1=player, 2=NPC/mob/object (NOT level, NOT model_id!)"
+    },
+    {
+      "namespace": "Container",
+      "name": "SubVTable1",
+      "linux_offset": 236,
+      "arm64_offset": 280,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr sub-object vtable 1"
+    },
+    {
+      "namespace": "Container",
+      "name": "SubVTable2",
+      "linux_offset": 244,
+      "arm64_offset": 296,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr sub-object vtable 2 (multiple inheritance)"
+    },
+    {
+      "namespace": "Container",
+      "name": "SubParent",
+      "linux_offset": 248,
+      "arm64_offset": 304,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr back-pointer to parent container"
+    },
+    {
+      "namespace": "Container",
+      "name": "EntityKey",
+      "linux_offset": 300,
+      "arm64_offset": 360,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 entity key (same as TreeNode::Key). Ghidra: FUN_008C1210"
+    },
+    {
+      "namespace": "Container",
+      "name": "Allegiance",
+      "linux_offset": 304,
+      "arm64_offset": 416,
+      "type": "u8",
+      "status": "CALIBRATED",
+      "comment": "u8 combat allegiance (0..6). Ghidra: FUN_008C1220 (BaseActor.cpp)"
+    },
+    {
+      "namespace": "Container",
+      "name": "HP",
+      "linux_offset": 308,
+      "arm64_offset": 420,
+      "type": "u32",
+      "status": "VERIFIED",
+      "comment": "s32 current HP (clamped [0,HPMax]). Ghidra: setter [0x4D]"
+    },
+    {
+      "namespace": "Container",
+      "name": "HPMax",
+      "linux_offset": 312,
+      "arm64_offset": 424,
+      "type": "u32",
+      "status": "VERIFIED",
+      "comment": "s32 max HP. Ghidra: setter [0x4E]"
+    },
+    {
+      "namespace": "Container",
+      "name": "MP",
+      "linux_offset": 316,
+      "arm64_offset": 428,
+      "type": "u32",
+      "status": "VERIFIED",
+      "comment": "s32 current MP/energy. Ghidra: setter [0x4F]"
+    },
+    {
+      "namespace": "Container",
+      "name": "MPMax",
+      "linux_offset": 320,
+      "arm64_offset": 432,
+      "type": "u32",
+      "status": "VERIFIED",
+      "comment": "s32 max MP. Ghidra: setter [0x50]"
+    },
+    {
+      "namespace": "Container",
+      "name": "AttackType",
+      "linux_offset": 324,
+      "arm64_offset": 436,
+      "type": "u8",
+      "status": "PREDICTED",
+      "comment": "u8 0=unarmed, 1=melee. Ghidra: FUN_008C7D20"
+    },
+    {
+      "namespace": "Container",
+      "name": "AnimPosX",
+      "linux_offset": 328,
+      "arm64_offset": 440,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "i32 animation X pos   (= sub + 0x5C)"
+    },
+    {
+      "namespace": "Container",
+      "name": "AnimPosY",
+      "linux_offset": 332,
+      "arm64_offset": 444,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "i32 animation Y pos   (= sub + 0x60)"
+    },
+    {
+      "namespace": "Container",
+      "name": "DestX",
+      "linux_offset": 336,
+      "arm64_offset": 448,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "i32 movement dest X   (= sub + 0x64)"
+    },
+    {
+      "namespace": "Container",
+      "name": "DestY",
+      "linux_offset": 340,
+      "arm64_offset": 452,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "i32 movement dest Y   (= sub + 0x68)"
+    },
+    {
+      "namespace": "Container",
+      "name": "MoveSpeed",
+      "linux_offset": 344,
+      "arm64_offset": 456,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 velocity magnitude. Ghidra: BaseActor ctor"
+    },
+    {
+      "namespace": "Container",
+      "name": "VelocityX",
+      "linux_offset": 360,
+      "arm64_offset": 472,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "s32 delta X per movement tick. Ghidra: MovementTick"
+    },
+    {
+      "namespace": "Container",
+      "name": "VelocityY",
+      "linux_offset": 364,
+      "arm64_offset": 476,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "s32 delta Y per movement tick. Ghidra: MovementTick"
+    },
+    {
+      "namespace": "Container",
+      "name": "WalkState",
+      "linux_offset": 368,
+      "arm64_offset": 480,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 0=idle, 1=walking, 8=dead. Ghidra: BaseActor ctor"
+    },
+    {
+      "namespace": "Container",
+      "name": "QuestIndicator",
+      "linux_offset": 688,
+      "arm64_offset": 800,
+      "type": "u8",
+      "status": "PREDICTED",
+      "comment": "u8 0=none, 1=\"!\", 2=\"?\"."
+    },
+    {
+      "namespace": "Container",
+      "name": "CombatPriority",
+      "linux_offset": 692,
+      "arm64_offset": 804,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 combat animation priority (higher = more important)"
+    },
+    {
+      "namespace": "Container",
+      "name": "TargetPtr",
+      "linux_offset": 696,
+      "arm64_offset": 808,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr pointer to targeted entity (0=none). Ghidra: entity builder"
+    },
+    {
+      "namespace": "Container",
+      "name": "TargetKey",
+      "linux_offset": 700,
+      "arm64_offset": 816,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 target entity key (set by SetTargetByKey)"
+    },
+    {
+      "namespace": "Container",
+      "name": "EffectList",
+      "linux_offset": 708,
+      "arm64_offset": 824,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "obj visual effect/buff display list (BuffsList.cpp)"
+    },
+    {
+      "namespace": "Container",
+      "name": "Buff1EndPtr",
+      "linux_offset": 732,
+      "arm64_offset": 848,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr end = base + count * 0x14"
+    },
+    {
+      "namespace": "Container",
+      "name": "Buff1Capacity",
+      "linux_offset": 736,
+      "arm64_offset": 856,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 allocated capacity (typically 0x20)"
+    },
+    {
+      "namespace": "Container",
+      "name": "Buff1Base",
+      "linux_offset": 740,
+      "arm64_offset": 864,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr base pointer to buff entries"
+    },
+    {
+      "namespace": "Container",
+      "name": "Buff1Count",
+      "linux_offset": 744,
+      "arm64_offset": 872,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 number of active buffs"
+    },
+    {
+      "namespace": "Container",
+      "name": "Buff2EndPtr",
+      "linux_offset": 748,
+      "arm64_offset": 880,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr end = base + count * 4"
+    },
+    {
+      "namespace": "Container",
+      "name": "Buff2Capacity",
+      "linux_offset": 752,
+      "arm64_offset": 888,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 allocated capacity (typically 0x20)"
+    },
+    {
+      "namespace": "Container",
+      "name": "Buff2Base",
+      "linux_offset": 756,
+      "arm64_offset": 896,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr base pointer to entries"
+    },
+    {
+      "namespace": "Container",
+      "name": "Buff2Count",
+      "linux_offset": 760,
+      "arm64_offset": 904,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 number of entries"
+    },
+    {
+      "namespace": "Container",
+      "name": "Faction",
+      "linux_offset": 768,
+      "arm64_offset": 912,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 faction (0, 1, or 2). Ghidra: FUN_008C2F30 (BaseActor.cpp)"
+    },
+    {
+      "namespace": "Container",
+      "name": "Level",
+      "linux_offset": 776,
+      "arm64_offset": 920,
+      "type": "u8",
+      "status": "PREDICTED",
+      "comment": "u8 entity level. Ghidra: FUN_008C3030 stores char (1 byte)"
+    },
+    {
+      "namespace": "Container",
+      "name": "DataTablePtr",
+      "linux_offset": 780,
+      "arm64_offset": 928,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr pointer to DataTable entry (NPC/mob). NULL for players. Ghidra: FUN_008C31D0"
+    },
+    {
+      "namespace": "Container",
+      "name": "CombatFlag",
+      "linux_offset": 784,
+      "arm64_offset": 936,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 combat-related flag (1 when NPC is in combat). NOT quest indicator!"
+    },
+    {
+      "namespace": "Container",
+      "name": "HostilityFlag",
+      "linux_offset": 788,
+      "arm64_offset": 940,
+      "type": "u8",
+      "status": "PREDICTED",
+      "comment": "u8 client-side hostility marker. In 5v5 arena: 0xE0=ally, 0x20=enemy."
+    },
+    {
+      "namespace": "Container",
+      "name": "IsBuilding",
+      "linux_offset": 796,
+      "arm64_offset": 948,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 is building flag. Ghidra: FUN_008C2240"
+    },
+    {
+      "namespace": "Container",
+      "name": "OwnerKey",
+      "linux_offset": 800,
+      "arm64_offset": 952,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 entity key of owner (pets/summons). 0 = hostile mob."
+    },
+    {
+      "namespace": "Container",
+      "name": "DialogState",
+      "linux_offset": 806,
+      "arm64_offset": 958,
+      "type": "u16",
+      "status": "PREDICTED",
+      "comment": "s16 dialog active (!=0 blocks input). Ghidra: HandleInput"
+    },
+    {
+      "namespace": "Container",
+      "name": "WeaponFlag",
+      "linux_offset": 826,
+      "arm64_offset": 978,
+      "type": "u16",
+      "status": "PREDICTED",
+      "comment": "u16 forces melee if !=0. Ghidra: UpdateAttackAnim"
+    },
+    {
+      "namespace": "Container",
+      "name": "DeathMarker",
+      "linux_offset": 872,
+      "arm64_offset": 1024,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 -1=alive, other=dead. Ghidra: entity builder"
+    },
+    {
+      "namespace": "Container",
+      "name": "HPRegen",
+      "linux_offset": 880,
+      "arm64_offset": 1032,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 HP regen rate (e.g. 19 = 19 un/5s). Isolated, validated"
+    },
+    {
+      "namespace": "Container",
+      "name": "EquipBase",
+      "linux_offset": 972,
+      "arm64_offset": 1128,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr equipment slot 0 (base)"
+    },
+    {
+      "namespace": "Container",
+      "name": "EquipWeapon",
+      "linux_offset": 988,
+      "arm64_offset": 1152,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr main weapon = slot 2 (validated with equip/unequip)"
+    },
+    {
+      "namespace": "Container",
+      "name": "EquipArmor1",
+      "linux_offset": 996,
+      "arm64_offset": 1168,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr armor slot 1 (body?)"
+    },
+    {
+      "namespace": "Container",
+      "name": "EquipWeapon2",
+      "linux_offset": 1004,
+      "arm64_offset": 1184,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr second weapon ref (same ptr as +0x3DC)"
+    },
+    {
+      "namespace": "Container",
+      "name": "EquipArmor2",
+      "linux_offset": 1020,
+      "arm64_offset": 1208,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr armor slot 2"
+    },
+    {
+      "namespace": "Container",
+      "name": "ClassId",
+      "linux_offset": 1085,
+      "arm64_offset": 1277,
+      "type": "u8",
+      "status": "PREDICTED",
+      "comment": "u8 player class (1-20). Ghidra: FUN_008D8D10. 0 for NPCs."
+    },
+    {
+      "namespace": "Container",
+      "name": "SkinId",
+      "linux_offset": 1086,
+      "arm64_offset": 1278,
+      "type": "u16",
+      "status": "PREDICTED",
+      "comment": "s16 appearance skin model. Ghidra: FUN_008D8D60"
+    },
+    {
+      "namespace": "Container",
+      "name": "HeadId",
+      "linux_offset": 1088,
+      "arm64_offset": 1280,
+      "type": "u16",
+      "status": "PREDICTED",
+      "comment": "s16 head/face model. Ghidra: FUN_008D8F10"
+    },
+    {
+      "namespace": "Container",
+      "name": "GMPtr",
+      "linux_offset": 1168,
+      "arm64_offset": 1360,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr back-reference to GameManager. Ghidra: SelectTarget"
+    },
+    {
+      "namespace": "Container",
+      "name": "XP",
+      "linux_offset": 1192,
+      "arm64_offset": 1388,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 current experience points. GDB validated 2026-03-30"
+    },
+    {
+      "namespace": "Container",
+      "name": "EquipSetId",
+      "linux_offset": 1208,
+      "arm64_offset": 1404,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 equipment set ID (triggers rebuild). Ghidra: FUN_008C8FA0"
+    },
+    {
+      "namespace": "Container",
+      "name": "Knowledge",
+      "linux_offset": 1212,
+      "arm64_offset": 1408,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 knowledge points. Ghidra: FUN_008C9240"
+    },
+    {
+      "namespace": "TreeNode",
+      "name": "Parent",
+      "linux_offset": 0,
+      "arm64_offset": 0,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr parent node (0 for root)"
+    },
+    {
+      "namespace": "TreeNode",
+      "name": "Left",
+      "linux_offset": 4,
+      "arm64_offset": 8,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr left child (0 if leaf)"
+    },
+    {
+      "namespace": "TreeNode",
+      "name": "Right",
+      "linux_offset": 8,
+      "arm64_offset": 16,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr right child (0 if leaf)"
+    },
+    {
+      "namespace": "TreeNode",
+      "name": "Color",
+      "linux_offset": 12,
+      "arm64_offset": 24,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 0=black, 1=red"
+    },
+    {
+      "namespace": "TreeNode",
+      "name": "Key",
+      "linux_offset": 16,
+      "arm64_offset": 28,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 entity ID (tree key)"
+    },
+    {
+      "namespace": "TreeNode",
+      "name": "ObjPtr",
+      "linux_offset": 20,
+      "arm64_offset": 32,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 Container of the entity"
+    },
+    {
+      "namespace": "TreeNode",
+      "name": "Size",
+      "linux_offset": 24,
+      "arm64_offset": 40,
+      "type": "u8",
+      "status": "PREDICTED",
+      "comment": "total node size in bytes"
+    },
+    {
+      "namespace": "Camera",
+      "name": "Zoom",
+      "linux_offset": 48,
+      "arm64_offset": 48,
+      "type": "f32",
+      "status": "PREDICTED",
+      "comment": "float computed zoom (settings_scale * screen_ratio). READ ONLY per frame"
+    },
+    {
+      "namespace": "Camera",
+      "name": "ZoomFixed1",
+      "linux_offset": 60,
+      "arm64_offset": 60,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 zoom in 16.16 fixed point (65536 = 1.0), unrelated to game scale"
+    },
+    {
+      "namespace": "Camera",
+      "name": "ZoomFixed2",
+      "linux_offset": 64,
+      "arm64_offset": 64,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 copy of zoom fixed"
+    },
+    {
+      "namespace": "Camera",
+      "name": "CamX",
+      "linux_offset": 104,
+      "arm64_offset": 104,
+      "type": "f32",
+      "status": "PREDICTED",
+      "comment": "float camera X position (world pixel coords)"
+    },
+    {
+      "namespace": "Camera",
+      "name": "CamY",
+      "linux_offset": 108,
+      "arm64_offset": 108,
+      "type": "f32",
+      "status": "PREDICTED",
+      "comment": "float camera Y position"
+    },
+    {
+      "namespace": "Camera",
+      "name": "VpLeft",
+      "linux_offset": 122,
+      "arm64_offset": 124,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "int16 viewport left bound (scroll position, not fixed)"
+    },
+    {
+      "namespace": "Camera",
+      "name": "VpTop",
+      "linux_offset": 124,
+      "arm64_offset": 128,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "int16 viewport top bound"
+    },
+    {
+      "namespace": "Camera",
+      "name": "VpRight",
+      "linux_offset": 126,
+      "arm64_offset": 132,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "int16 viewport right bound"
+    },
+    {
+      "namespace": "Camera",
+      "name": "VpBottom",
+      "linux_offset": 128,
+      "arm64_offset": 136,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "int16 viewport bottom bound"
+    },
+    {
+      "namespace": "InteractiveObject",
+      "name": "VTable",
+      "linux_offset": 0,
+      "arm64_offset": 0,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr RVA 0xDC8230 (fixed for all interactive objects)"
+    },
+    {
+      "namespace": "InteractiveObject",
+      "name": "Type",
+      "linux_offset": 4,
+      "arm64_offset": 8,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 always 1"
+    },
+    {
+      "namespace": "InteractiveObject",
+      "name": "PosPacked",
+      "linux_offset": 8,
+      "arm64_offset": 12,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 tile_x<<16 | tile_y"
+    },
+    {
+      "namespace": "InteractiveObject",
+      "name": "LockState",
+      "linux_offset": 28,
+      "arm64_offset": 32,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 0=open (can interact), 255=closed/locked"
+    },
+    {
+      "namespace": "InteractiveObject",
+      "name": "LockType",
+      "linux_offset": 44,
+      "arm64_offset": 48,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 0=no lock, 3=locked (quest/level required)"
+    },
+    {
+      "namespace": "InteractiveObject",
+      "name": "WStringObj",
+      "linux_offset": 88,
+      "arm64_offset": 96,
+      "type": "wstring",
+      "status": "PREDICTED",
+      "comment": "12B std::wstring of name"
+    },
+    {
+      "namespace": "InteractiveObject",
+      "name": "NameData",
+      "linux_offset": 100,
+      "arm64_offset": 112,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "wchar_t[] name UTF-32LE"
+    },
+    {
+      "namespace": "InteractiveObject",
+      "name": "SpriteId",
+      "linux_offset": 180,
+      "arm64_offset": 192,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 sprite/icon ID"
+    },
+    {
+      "namespace": "InteractiveObject",
+      "name": "ObjType",
+      "linux_offset": 184,
+      "arm64_offset": 196,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 always 2"
+    },
+    {
+      "namespace": "InteractiveObject",
+      "name": "QuestPtr",
+      "linux_offset": 252,
+      "arm64_offset": 264,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr 0=passage/portal, nonzero=quest/plant (used by SDK isPassage())"
+    },
+    {
+      "namespace": "InteractiveObject",
+      "name": "OpenFlag",
+      "linux_offset": 284,
+      "arm64_offset": 300,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 1=open/usable, 0=closed/consumed"
+    },
+    {
+      "namespace": "ExplorerStats",
+      "name": "VigorCur",
+      "linux_offset": 0,
+      "arm64_offset": 0,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 current Vigor do Explorador (0..5)"
+    },
+    {
+      "namespace": "ExplorerStats",
+      "name": "VigorMax",
+      "linux_offset": 4,
+      "arm64_offset": 4,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 max vigor (=5)"
+    },
+    {
+      "namespace": "ExplorerStats",
+      "name": "OxygenCur",
+      "linux_offset": 20,
+      "arm64_offset": 20,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 current Oxig\u00eanio"
+    },
+    {
+      "namespace": "QuestEntry",
+      "name": "QuestId",
+      "linux_offset": 0,
+      "arm64_offset": 0,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 quest ID (e.g. 916, 1184, 1233)"
+    },
+    {
+      "namespace": "QuestEntry",
+      "name": "WStringName",
+      "linux_offset": 4,
+      "arm64_offset": 8,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "wstring {ptr(4), cap(4), len(4)} + SSO buf(80B)"
+    },
+    {
+      "namespace": "QuestEntry",
+      "name": "NameBuf",
+      "linux_offset": 16,
+      "arm64_offset": 24,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "wchar_t[20] SSO inline buffer (80B)"
+    },
+    {
+      "namespace": "QuestEntry",
+      "name": "Counter1Label",
+      "linux_offset": 96,
+      "arm64_offset": 104,
+      "type": "wstring",
+      "status": "PREDICTED",
+      "comment": "wstring static label of counter 1"
+    },
+    {
+      "namespace": "QuestEntry",
+      "name": "Counter2Label",
+      "linux_offset": 188,
+      "arm64_offset": 200,
+      "type": "wstring",
+      "status": "PREDICTED",
+      "comment": "wstring static label of counter 2"
+    },
+    {
+      "namespace": "QuestEntry",
+      "name": "Counter3Label",
+      "linux_offset": 280,
+      "arm64_offset": 296,
+      "type": "wstring",
+      "status": "PREDICTED",
+      "comment": "wstring static label of counter 3"
+    },
+    {
+      "namespace": "QuestEntry",
+      "name": "StageText",
+      "linux_offset": 372,
+      "arm64_offset": 392,
+      "type": "wstring",
+      "status": "PREDICTED",
+      "comment": "wstring stage text (definition, NOT progress)"
+    },
+    {
+      "namespace": "QuestEntry",
+      "name": "StagesContainer",
+      "linux_offset": 464,
+      "arm64_offset": 488,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "container {ptr,0x20,ptr,count}"
+    },
+    {
+      "namespace": "QuestEntry",
+      "name": "DialogContainer",
+      "linux_offset": 480,
+      "arm64_offset": 512,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "container {ptr,0x20,ptr,count}"
+    },
+    {
+      "namespace": "QuestEntry",
+      "name": "DisplayWStr",
+      "linux_offset": 504,
+      "arm64_offset": 544,
+      "type": "wstring",
+      "status": "PREDICTED",
+      "comment": "wstring display/UI field"
+    },
+    {
+      "namespace": "QuestEntry",
+      "name": "Field218",
+      "linux_offset": 536,
+      "arm64_offset": 580,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 unknown (e.g. 31, 3)"
+    },
+    {
+      "namespace": "QuestNetwork",
+      "name": "STATE_QID_OFFSET",
+      "linux_offset": 2,
+      "arm64_offset": 4,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "QuestNetwork",
+      "name": "D904_QID_OFFSET",
+      "linux_offset": 3,
+      "arm64_offset": 8,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "quest_id starts at d904+3"
+    },
+    {
+      "namespace": "QuestNetwork",
+      "name": "DETAIL_TYPE",
+      "linux_offset": 4,
+      "arm64_offset": 12,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "QuestNetwork",
+      "name": "STATE_PROGRESS_OFF",
+      "linux_offset": 10,
+      "arm64_offset": 20,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "from pattern start (16 14 + 8)"
+    },
+    {
+      "namespace": "QuestNetwork",
+      "name": "STATE_TARGET_OFF",
+      "linux_offset": 15,
+      "arm64_offset": 28,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "from pattern start (16 14 + 13)"
+    },
+    {
+      "namespace": "QuestNetwork",
+      "name": "D904_PROGRESS_OFF",
+      "linux_offset": 67,
+      "arm64_offset": 80,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "progress u32LE at d904+67"
+    },
+    {
+      "namespace": "QuestNetwork",
+      "name": "D904_TARGET_OFF",
+      "linux_offset": 71,
+      "arm64_offset": 84,
+      "type": "u8",
+      "status": "PREDICTED",
+      "comment": "target u8 at d904+71"
+    },
+    {
+      "namespace": "QuestNetwork",
+      "name": "D904_MIN_LEN",
+      "linux_offset": 72,
+      "arm64_offset": 85,
+      "type": "u8",
+      "status": "PREDICTED",
+      "comment": "minimum bytes needed from d904 start"
+    },
+    {
+      "namespace": "QuestNetwork",
+      "name": "SUB_QUEST_STATE",
+      "linux_offset": 1241,
+      "arm64_offset": 1256,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "QuestNetwork",
+      "name": "OP_QUEST_DETAIL_REQ",
+      "linux_offset": 39426,
+      "arm64_offset": 39444,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "QuestInstanceTreeNode",
+      "name": "InnerQuestId",
+      "linux_offset": 16,
+      "arm64_offset": 16,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 quest_id (BST key)"
+    },
+    {
+      "namespace": "QuestInstanceTreeNode",
+      "name": "OuterKey",
+      "linux_offset": 16,
+      "arm64_offset": 16,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 world/zone grouping id"
+    },
+    {
+      "namespace": "QuestInstanceTreeNode",
+      "name": "InnerQuestData",
+      "linux_offset": 20,
+      "arm64_offset": 24,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 Quest heap struct"
+    },
+    {
+      "namespace": "QuestInstanceTreeNode",
+      "name": "OuterField14",
+      "linux_offset": 20,
+      "arm64_offset": 24,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "QuestInstanceTreeNode",
+      "name": "InnerField18",
+      "linux_offset": 24,
+      "arm64_offset": 32,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "u32 status (not a ptr)"
+    },
+    {
+      "namespace": "QuestInstanceTreeNode",
+      "name": "OuterInnerContainer",
+      "linux_offset": 24,
+      "arm64_offset": 32,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 inner BST container"
+    },
+    {
+      "namespace": "QuestInstanceTreeNode",
+      "name": "InnerStatus",
+      "linux_offset": 28,
+      "arm64_offset": 40,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "QuestInstanceTreeNode",
+      "name": "OuterFlags",
+      "linux_offset": 28,
+      "arm64_offset": 40,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "QuestInstance",
+      "name": "QuestId",
+      "linux_offset": 8,
+      "arm64_offset": 8,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 quest ID"
+    },
+    {
+      "namespace": "QuestInstance",
+      "name": "Done",
+      "linux_offset": 24,
+      "arm64_offset": 24,
+      "type": "u8",
+      "status": "PREDICTED",
+      "comment": "u8 quest finished flag"
+    },
+    {
+      "namespace": "QuestInstance",
+      "name": "CurrentStage",
+      "linux_offset": 28,
+      "arm64_offset": 28,
+      "type": "u8",
+      "status": "PREDICTED",
+      "comment": "u8 stage (1-based)"
+    },
+    {
+      "namespace": "QuestInstance",
+      "name": "StageDone",
+      "linux_offset": 29,
+      "arm64_offset": 29,
+      "type": "u8",
+      "status": "PREDICTED",
+      "comment": "u8 stage objective completed"
+    },
+    {
+      "namespace": "QuestInstance",
+      "name": "CountersTree",
+      "linux_offset": 36,
+      "arm64_offset": 40,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 tree {root, count, flags} of ObjectiveNode"
+    },
+    {
+      "namespace": "QuestInstance",
+      "name": "AuxTree",
+      "linux_offset": 40,
+      "arm64_offset": 48,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 tree (purpose still unclear)"
+    },
+    {
+      "namespace": "QuestInstance",
+      "name": "AreasTree",
+      "linux_offset": 48,
+      "arm64_offset": 64,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 tree of AreaMarker vectors (one per zone)"
+    },
+    {
+      "namespace": "QuestInstance",
+      "name": "MarkersTree",
+      "linux_offset": 56,
+      "arm64_offset": 80,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 tree of 10-byte marker entries"
+    },
+    {
+      "namespace": "ObjectiveCounterNode",
+      "name": "StageIndex",
+      "linux_offset": 16,
+      "arm64_offset": 16,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u8 (low byte; full u32 slot)"
+    },
+    {
+      "namespace": "ObjectiveCounterNode",
+      "name": "Progress",
+      "linux_offset": 20,
+      "arm64_offset": 20,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 current count"
+    },
+    {
+      "namespace": "ObjectiveCounterNode",
+      "name": "Target",
+      "linux_offset": 24,
+      "arm64_offset": 24,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 target count"
+    },
+    {
+      "namespace": "QuestAreaMarker",
+      "name": "AreaX",
+      "linux_offset": 0,
+      "arm64_offset": 0,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "QuestAreaMarker",
+      "name": "AreaY",
+      "linux_offset": 2,
+      "arm64_offset": 4,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "QuestAreaMarker",
+      "name": "AreaZ",
+      "linux_offset": 4,
+      "arm64_offset": 8,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "QuestAreaMarker",
+      "name": "Stride",
+      "linux_offset": 6,
+      "arm64_offset": 12,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "QuestMarkersNode",
+      "name": "AreaKey",
+      "linux_offset": 16,
+      "arm64_offset": 16,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 area/zone id"
+    },
+    {
+      "namespace": "QuestMarkersNode",
+      "name": "VecEnd",
+      "linux_offset": 20,
+      "arm64_offset": 20,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "QuestMarkersNode",
+      "name": "VecCap",
+      "linux_offset": 24,
+      "arm64_offset": 24,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "QuestMarkersNode",
+      "name": "VecBegin",
+      "linux_offset": 28,
+      "arm64_offset": 28,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "ObjectiveNode",
+      "name": "StageIndex",
+      "linux_offset": 16,
+      "arm64_offset": 16,
+      "type": "u8",
+      "status": "PREDICTED",
+      "comment": "u8 objective index (key)"
+    },
+    {
+      "namespace": "ObjectiveNode",
+      "name": "Progress",
+      "linux_offset": 20,
+      "arm64_offset": 20,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 current progress (e.g. 3 kills)"
+    },
+    {
+      "namespace": "ObjectiveNode",
+      "name": "Target",
+      "linux_offset": 24,
+      "arm64_offset": 24,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 target count (e.g. 5 kills)"
+    },
+    {
+      "namespace": "QuestProgressMgrSub",
+      "name": "ObserverLock",
+      "linux_offset": 4,
+      "arm64_offset": 4,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "s32 -1=idle"
+    },
+    {
+      "namespace": "QuestProgressMgrSub",
+      "name": "AcceptedQuestTree",
+      "linux_offset": 44,
+      "arm64_offset": 48,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr* \u2192 12B container"
+    },
+    {
+      "namespace": "QuestProgressMgrSub",
+      "name": "QuestTrackingTree",
+      "linux_offset": 44,
+      "arm64_offset": 48,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "QuestProgressMgrSub",
+      "name": "MarkerTree",
+      "linux_offset": 52,
+      "arm64_offset": 64,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr* BST quest_id \u2192 vector of 10B marker entries"
+    },
+    {
+      "namespace": "QuestProgressMgrSub",
+      "name": "DialogQuestId",
+      "linux_offset": 56,
+      "arm64_offset": 72,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 currently-displayed quest ID (0 when closed)"
+    },
+    {
+      "namespace": "QuestProgressMgrSub",
+      "name": "TrackedQuestId",
+      "linux_offset": 56,
+      "arm64_offset": 72,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "DEPRECATED alias for DialogQuestId"
+    },
+    {
+      "namespace": "QuestProgressMgrSub",
+      "name": "DialogRewardAcked",
+      "linux_offset": 61,
+      "arm64_offset": 77,
+      "type": "u8",
+      "status": "PREDICTED",
+      "comment": "u8 0=first click shows reward preview, 1=next click confirms"
+    },
+    {
+      "namespace": "QuestProgressMgrSub",
+      "name": "DialogPhase",
+      "linux_offset": 62,
+      "arm64_offset": 78,
+      "type": "u8",
+      "status": "PREDICTED",
+      "comment": "u8 state: 1,3,5=advance/deliver \u00b7 2=offer \u00b7 4,6=award-choice"
+    },
+    {
+      "namespace": "QuestProgressMgrSub",
+      "name": "DialogStagesBegin",
+      "linux_offset": 76,
+      "arm64_offset": 96,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr vec<Stage> begin (stride 0x10)"
+    },
+    {
+      "namespace": "QuestProgressMgrSub",
+      "name": "DialogStagesEnd",
+      "linux_offset": 80,
+      "arm64_offset": 104,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr vec<Stage> end"
+    },
+    {
+      "namespace": "QuestProgressMgrSub",
+      "name": "DialogAwardsBegin",
+      "linux_offset": 88,
+      "arm64_offset": 120,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr vec<Award> begin (stride 0x48, +0x44=type_id)"
+    },
+    {
+      "namespace": "QuestProgressMgrSub",
+      "name": "DialogAwardsEnd",
+      "linux_offset": 92,
+      "arm64_offset": 128,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr vec<Award> end"
+    },
+    {
+      "namespace": "QuestProgressMgrSub",
+      "name": "DialogParentRef",
+      "linux_offset": 132,
+      "arm64_offset": 176,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr refcounted parent (SceneMgr form handle)"
+    },
+    {
+      "namespace": "QuestProgressMgrSub",
+      "name": "DialogActiveFlag",
+      "linux_offset": 136,
+      "arm64_offset": 184,
+      "type": "u8",
+      "status": "PREDICTED",
+      "comment": "u8 1=popup visible, 0=closed/no-op. Confirm function early-returns on 0."
+    },
+    {
+      "namespace": "QuestProgressMgrSub",
+      "name": "IsTracking",
+      "linux_offset": 136,
+      "arm64_offset": 184,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "DEPRECATED alias for DialogActiveFlag"
+    },
+    {
+      "namespace": "QuestProgressMgrSub",
+      "name": "DialogResultState",
+      "linux_offset": 148,
+      "arm64_offset": 196,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 written to 2 after confirm finishes"
+    },
+    {
+      "namespace": "QuestProgressMgrSub",
+      "name": "OfferedQuestTree",
+      "linux_offset": 260,
+      "arm64_offset": 308,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "QuestProgressMgrSub",
+      "name": "QuestInstanceTree",
+      "linux_offset": 260,
+      "arm64_offset": 308,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "back-compat (wrong semantically)"
+    },
+    {
+      "namespace": "QuestProgressMgrSub",
+      "name": "FloatingTextCache",
+      "linux_offset": 348,
+      "arm64_offset": 400,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr* BST entity_key \u2192 floating combat text (NOT quest data)"
+    },
+    {
+      "namespace": "QuestProgressMgrSub",
+      "name": "QuestDataTree",
+      "linux_offset": 504,
+      "arm64_offset": 560,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr* BST quest_id \u2192 quest_data_obj* (509 entries, all quests)"
+    },
+    {
+      "namespace": "QuestProgressMgrSub",
+      "name": "ZoneQuestTree",
+      "linux_offset": 512,
+      "arm64_offset": 576,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr* BST zone_id \u2192 u32[] quest_ids per zone (68 zones)"
+    },
+    {
+      "namespace": "QuestProgressMgrSub",
+      "name": "QuestStatusTree",
+      "linux_offset": 544,
+      "arm64_offset": 616,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr* BST seq_key \u2192 {quest_id, status} for all known quests"
+    },
+    {
+      "namespace": "MarkerEntry",
+      "name": "GridX",
+      "linux_offset": 0,
+      "arm64_offset": 0,
+      "type": "u16",
+      "status": "PREDICTED",
+      "comment": "u16 chunk gx (global chunk coord)"
+    },
+    {
+      "namespace": "MarkerEntry",
+      "name": "GridY",
+      "linux_offset": 2,
+      "arm64_offset": 2,
+      "type": "u16",
+      "status": "PREDICTED",
+      "comment": "u16 chunk gy (global chunk coord)"
+    },
+    {
+      "namespace": "MarkerEntry",
+      "name": "Flags",
+      "linux_offset": 4,
+      "arm64_offset": 4,
+      "type": "u16",
+      "status": "PREDICTED",
+      "comment": "u16 flags (observed: 0x0080)"
+    },
+    {
+      "namespace": "MarkerEntry",
+      "name": "NpcType",
+      "linux_offset": 6,
+      "arm64_offset": 6,
+      "type": "u16",
+      "status": "PREDICTED",
+      "comment": "u16 NPC type/model ID"
+    },
+    {
+      "namespace": "MarkerEntry",
+      "name": "MarkerIcon",
+      "linux_offset": 8,
+      "arm64_offset": 8,
+      "type": "u16",
+      "status": "PREDICTED",
+      "comment": "u16 icon code (0x2605 = \u2605 star)"
+    },
+    {
+      "namespace": "MarkerEntry",
+      "name": "Stride",
+      "linux_offset": 10,
+      "arm64_offset": 10,
+      "type": "u8",
+      "status": "PREDICTED",
+      "comment": "10 bytes per entry"
+    },
+    {
+      "namespace": "MarkerNode",
+      "name": "QuestId",
+      "linux_offset": 16,
+      "arm64_offset": 16,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 quest ID (BST key)"
+    },
+    {
+      "namespace": "MarkerNode",
+      "name": "Field14",
+      "linux_offset": 20,
+      "arm64_offset": 20,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 unknown (varies)"
+    },
+    {
+      "namespace": "MarkerNode",
+      "name": "VecEnd",
+      "linux_offset": 24,
+      "arm64_offset": 24,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr end of entry buffer"
+    },
+    {
+      "namespace": "MarkerNode",
+      "name": "VecCap",
+      "linux_offset": 28,
+      "arm64_offset": 32,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 buffer capacity in bytes"
+    },
+    {
+      "namespace": "MarkerNode",
+      "name": "VecBegin",
+      "linux_offset": 32,
+      "arm64_offset": 40,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr start of entry buffer"
+    },
+    {
+      "namespace": "MarkerNode",
+      "name": "VecCount",
+      "linux_offset": 36,
+      "arm64_offset": 48,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 number of 10-byte entries"
+    },
+    {
+      "namespace": "EntityManagerEntry",
+      "name": "VTable",
+      "linux_offset": 0,
+      "arm64_offset": 0,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr entry vtable"
+    },
+    {
+      "namespace": "EntityManagerEntry",
+      "name": "Type",
+      "linux_offset": 4,
+      "arm64_offset": 8,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 1=player, 3=NPC/mob"
+    },
+    {
+      "namespace": "EntityManagerEntry",
+      "name": "Id",
+      "linux_offset": 8,
+      "arm64_offset": 12,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 entity ID (0xFFFFFFFF = sentinel)"
+    },
+    {
+      "namespace": "EntityManagerEntry",
+      "name": "Ptr1",
+      "linux_offset": 12,
+      "arm64_offset": 16,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr pointer 1 (heap)"
+    },
+    {
+      "namespace": "EntityManagerEntry",
+      "name": "Ptr2",
+      "linux_offset": 16,
+      "arm64_offset": 24,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr pointer 2 (heap)"
+    },
+    {
+      "namespace": "EntityManagerEntry",
+      "name": "Size",
+      "linux_offset": 20,
+      "arm64_offset": 32,
+      "type": "u8",
+      "status": "PREDICTED",
+      "comment": "bytes per entry"
+    },
+    {
+      "namespace": "Network",
+      "name": "ACTION_CLASS_SKILL",
+      "linux_offset": 0,
+      "arm64_offset": 0,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "Network",
+      "name": "ACTION_CLASS_ATTACK",
+      "linux_offset": 1,
+      "arm64_offset": 4,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "Network",
+      "name": "ACTION_CLASS_INTERACT",
+      "linux_offset": 2,
+      "arm64_offset": 8,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "Network",
+      "name": "ACTION_CLASS_DIALOGUE",
+      "linux_offset": 3,
+      "arm64_offset": 12,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "Network",
+      "name": "OP_C2S_POST_LOGIN",
+      "linux_offset": 264,
+      "arm64_offset": 276,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "Network",
+      "name": "OP_S2C_LOGIN_RESP",
+      "linux_offset": 507,
+      "arm64_offset": 520,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "Network",
+      "name": "OP_C2S_MOVEMENT",
+      "linux_offset": 516,
+      "arm64_offset": 532,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "Network",
+      "name": "OP_C2S_HEARTBEAT",
+      "linux_offset": 772,
+      "arm64_offset": 788,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "Network",
+      "name": "OP_S2C_MOVE_CONFIRM",
+      "linux_offset": 1028,
+      "arm64_offset": 1044,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "Network",
+      "name": "OP_S2C_HEARTBEAT_ACK",
+      "linux_offset": 1284,
+      "arm64_offset": 1300,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "Network",
+      "name": "OP_C2S_STATE_REQ",
+      "linux_offset": 1293,
+      "arm64_offset": 1312,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "Network",
+      "name": "OP_S2C_LOOT_ITEM_INFO",
+      "linux_offset": 1553,
+      "arm64_offset": 1572,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "server sends item data for loot window"
+    },
+    {
+      "namespace": "Network",
+      "name": "OP_C2S_POS_REPORT",
+      "linux_offset": 2055,
+      "arm64_offset": 2076,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "Network",
+      "name": "OP_C2S_ACTION",
+      "linux_offset": 3089,
+      "arm64_offset": 3112,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "universal: attack/skill/interact/dialogue"
+    },
+    {
+      "namespace": "Network",
+      "name": "OP_S2C_SERVER_NOTIFY",
+      "linux_offset": 3332,
+      "arm64_offset": 3356,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "Network",
+      "name": "OP_C2S_WALK_TO_LOOT",
+      "linux_offset": 4615,
+      "arm64_offset": 4640,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "Network",
+      "name": "OP_S2C_POS_UPDATE",
+      "linux_offset": 4873,
+      "arm64_offset": 4900,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "Network",
+      "name": "OP_C2S_CLOSE_DIALOG",
+      "linux_offset": 5122,
+      "arm64_offset": 5152,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "Network",
+      "name": "OP_C2S_MARKET_CLOSE",
+      "linux_offset": 5122,
+      "arm64_offset": 5152,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "4B: [opcode:2B][0000] (same as CLOSE_DIALOG)"
+    },
+    {
+      "namespace": "Network",
+      "name": "OP_C2S_PICKUP_ITEM",
+      "linux_offset": 8202,
+      "arm64_offset": 8232,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "Network",
+      "name": "OP_S2C_PICKUP_CONFIRM",
+      "linux_offset": 8209,
+      "arm64_offset": 8240,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "item added to inventory after pickup"
+    },
+    {
+      "namespace": "Network",
+      "name": "GameServerPort",
+      "linux_offset": 15103,
+      "arm64_offset": 15136,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "Network",
+      "name": "OP_S2C_ENTITY_SPAWN",
+      "linux_offset": 16665,
+      "arm64_offset": 16700,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "Network",
+      "name": "OP_S2C_ENTITY_SPAWN2",
+      "linux_offset": 16666,
+      "arm64_offset": 16704,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "Network",
+      "name": "OP_S2C_CHAT_MSG",
+      "linux_offset": 16694,
+      "arm64_offset": 16732,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "Network",
+      "name": "OP_S2C_CHAT_MSG2",
+      "linux_offset": 16701,
+      "arm64_offset": 16740,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "Network",
+      "name": "OP_S2C_SKILL_ACK",
+      "linux_offset": 18691,
+      "arm64_offset": 18732,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "Network",
+      "name": "OP_C2S_MARKET_OPEN",
+      "linux_offset": 18944,
+      "arm64_offset": 18988,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "2B: confirm market open"
+    },
+    {
+      "namespace": "Network",
+      "name": "OP_C2S_MARKET_BROWSE",
+      "linux_offset": 19204,
+      "arm64_offset": 19248,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "6B: [opcode:2B][cat_id:u32 LE]"
+    },
+    {
+      "namespace": "Network",
+      "name": "OP_C2S_MARKET_SEARCH",
+      "linux_offset": 19460,
+      "arm64_offset": 19504,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "6B: [opcode:2B][item_id:u32 LE]"
+    },
+    {
+      "namespace": "Network",
+      "name": "OP_S2C_ENTITY_DATA",
+      "linux_offset": 21760,
+      "arm64_offset": 21804,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "Network",
+      "name": "OP_C2S_LOGIN",
+      "linux_offset": 21787,
+      "arm64_offset": 21832,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "Network",
+      "name": "OP_C2S_USE_ITEM",
+      "linux_offset": 38914,
+      "arm64_offset": 38960,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "7B: [type:u8][slot:u32] \u2014 use item from bag"
+    },
+    {
+      "namespace": "Network",
+      "name": "OP_C2S_ITEM_ACTION",
+      "linux_offset": 39682,
+      "arm64_offset": 39728,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "7B: [type:u8][param:u32] \u2014 secondary item action"
+    },
+    {
+      "namespace": "Network",
+      "name": "OP_C2S_OPEN_LOOT",
+      "linux_offset": 44289,
+      "arm64_offset": 44336,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "Network",
+      "name": "OP_S2C_COMBAT_START",
+      "linux_offset": 45569,
+      "arm64_offset": 45616,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "Network",
+      "name": "OP_S2C_LOOT_AVAILABLE",
+      "linux_offset": 46337,
+      "arm64_offset": 46384,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "Network",
+      "name": "OP_C2S_ENTITY_QUERY",
+      "linux_offset": 51457,
+      "arm64_offset": 51504,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "Network",
+      "name": "OP_S2C_QUEST_UPDATE",
+      "linux_offset": 51715,
+      "arm64_offset": 51764,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "Network",
+      "name": "OP_S2C_QUEST_ACCEPT",
+      "linux_offset": 54788,
+      "arm64_offset": 54840,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "Network",
+      "name": "OP_S2C_QUEST_COMPLETE",
+      "linux_offset": 55044,
+      "arm64_offset": 55096,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "Network",
+      "name": "OP_C2S_MARKET_DETAIL",
+      "linux_offset": 55297,
+      "arm64_offset": 55352,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "7B each: [opcode:2B][04][slot:u32] (batched)"
+    },
+    {
+      "namespace": "Network",
+      "name": "OP_S2C_ENTITY_UPDATE",
+      "linux_offset": 60419,
+      "arm64_offset": 60476,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "Network",
+      "name": "OP_C2S_HOTBAR_SYNC",
+      "linux_offset": 63489,
+      "arm64_offset": 63548,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "VTables",
+      "name": "GameManager",
+      "linux_offset": 14439564,
+      "arm64_offset": 14439564,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "GSI / Game Manager singleton"
+    },
+    {
+      "namespace": "VTables",
+      "name": "EntityManager",
+      "linux_offset": 14441320,
+      "arm64_offset": 14441320,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "Entity Manager singleton"
+    },
+    {
+      "namespace": "VTables",
+      "name": "OtherManager",
+      "linux_offset": 14451148,
+      "arm64_offset": 14451148,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "Unknown manager"
+    },
+    {
+      "namespace": "VTables",
+      "name": "InteractiveObj",
+      "linux_offset": 14451248,
+      "arm64_offset": 14451248,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "Interactive objects (doors, portals, altars)"
+    },
+    {
+      "namespace": "VTables",
+      "name": "Player",
+      "linux_offset": 14454092,
+      "arm64_offset": 14454092,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "Container of players (type 3=SELF, type 1=other player)"
+    },
+    {
+      "namespace": "VTables",
+      "name": "FriendlyNPC",
+      "linux_offset": 14455088,
+      "arm64_offset": 14455088,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "Container of friendly NPCs, NOT attackable (type 1)"
+    },
+    {
+      "namespace": "VTables",
+      "name": "Corpse",
+      "linux_offset": 14455408,
+      "arm64_offset": 14455408,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "Dead mob corpse (in corpseTree, has loot)"
+    },
+    {
+      "namespace": "VTables",
+      "name": "Enemy",
+      "linux_offset": 14455472,
+      "arm64_offset": 14455472,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "Container of attackable mobs (type 1)"
+    },
+    {
+      "namespace": "ELF",
+      "name": "HeadersStart",
+      "linux_offset": 0,
+      "arm64_offset": 0,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "ELF",
+      "name": "HeadersEnd",
+      "linux_offset": 446464,
+      "arm64_offset": 446464,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "ELF",
+      "name": "TextStart",
+      "linux_offset": 446464,
+      "arm64_offset": 446464,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "r-xp ~12.4MB executable code"
+    },
+    {
+      "namespace": "ELF",
+      "name": "RodataStart",
+      "linux_offset": 13422592,
+      "arm64_offset": 13422592,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "r--p ~836KB"
+    },
+    {
+      "namespace": "ELF",
+      "name": "TextEnd",
+      "linux_offset": 13422592,
+      "arm64_offset": 13422592,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "ELF",
+      "name": "DataRoStart",
+      "linux_offset": 14278656,
+      "arm64_offset": 14278656,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "r--p ~256KB (relro)"
+    },
+    {
+      "namespace": "ELF",
+      "name": "RodataEnd",
+      "linux_offset": 14278656,
+      "arm64_offset": 14278656,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "ELF",
+      "name": "DataRoEnd",
+      "linux_offset": 14540800,
+      "arm64_offset": 14540800,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "ELF",
+      "name": "DataRwStart",
+      "linux_offset": 14540800,
+      "arm64_offset": 14540800,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "rw-p ~8KB"
+    },
+    {
+      "namespace": "ELF",
+      "name": "BssStart",
+      "linux_offset": 14548992,
+      "arm64_offset": 14548992,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "rw-p ~1.2MB (anonymous)"
+    },
+    {
+      "namespace": "ELF",
+      "name": "DataRwEnd",
+      "linux_offset": 14548992,
+      "arm64_offset": 14548992,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "ELF",
+      "name": "BssEnd",
+      "linux_offset": 15749120,
+      "arm64_offset": 15749120,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "MapFile",
+      "name": "TileBlocked",
+      "linux_offset": 0,
+      "arm64_offset": 0,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "MapFile",
+      "name": "TileWalkable",
+      "linux_offset": 1,
+      "arm64_offset": 4,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "MapFile",
+      "name": "PassageMin",
+      "linux_offset": 2,
+      "arm64_offset": 8,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "MapFile",
+      "name": "TileBytes",
+      "linux_offset": 2,
+      "arm64_offset": 8,
+      "type": "u16",
+      "status": "PREDICTED",
+      "comment": "bytes per tile (u16)"
+    },
+    {
+      "namespace": "MapFile",
+      "name": "HeaderSize",
+      "linux_offset": 4,
+      "arm64_offset": 12,
+      "type": "u16",
+      "status": "PREDICTED",
+      "comment": "u16 version + u16 param"
+    },
+    {
+      "namespace": "MapFile",
+      "name": "PassageMax",
+      "linux_offset": 10,
+      "arm64_offset": 20,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": ""
+    },
+    {
+      "namespace": "MapFile",
+      "name": "ChunkSize",
+      "linux_offset": 28,
+      "arm64_offset": 40,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "tiles per chunk side"
+    },
+    {
+      "namespace": "MapFile",
+      "name": "TotalSize",
+      "linux_offset": 1572,
+      "arm64_offset": 1584,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "4 + 28*28*2"
+    },
+    {
+      "namespace": "CollisionGrid",
+      "name": "GMBackRef",
+      "linux_offset": 0,
+      "arm64_offset": 0,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr back-reference to GM (AppState+0x14)"
+    },
+    {
+      "namespace": "CollisionGrid",
+      "name": "TileBytes",
+      "linux_offset": 2,
+      "arm64_offset": 8,
+      "type": "u16",
+      "status": "PREDICTED",
+      "comment": "bytes per tile (u16)"
+    },
+    {
+      "namespace": "CollisionGrid",
+      "name": "AreaId",
+      "linux_offset": 8,
+      "arm64_offset": 14,
+      "type": "u16",
+      "status": "PREDICTED",
+      "comment": "s16 area_id (GDB confirmed: matches .map filename)"
+    },
+    {
+      "namespace": "CollisionGrid",
+      "name": "GridY",
+      "linux_offset": 10,
+      "arm64_offset": 16,
+      "type": "u16",
+      "status": "PREDICTED",
+      "comment": "s16 grid_y (GDB confirmed: matches .map filename)"
+    },
+    {
+      "namespace": "CollisionGrid",
+      "name": "LayerId",
+      "linux_offset": 12,
+      "arm64_offset": 18,
+      "type": "u16",
+      "status": "PREDICTED",
+      "comment": "s16 layer_id (GDB confirmed: matches .map filename)"
+    },
+    {
+      "namespace": "CollisionGrid",
+      "name": "MapZone",
+      "linux_offset": 14,
+      "arm64_offset": 20,
+      "type": "u16",
+      "status": "PREDICTED",
+      "comment": "s16 map zone (differs from GM+0x1038 game zone!)"
+    },
+    {
+      "namespace": "CollisionGrid",
+      "name": "TileData",
+      "linux_offset": 16,
+      "arm64_offset": 24,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "start of 28\u00d728 tile array (2B/tile)"
+    },
+    {
+      "namespace": "CollisionGrid",
+      "name": "ChunkSize",
+      "linux_offset": 28,
+      "arm64_offset": 36,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "tiles per side"
+    },
+    {
+      "namespace": "CollisionGrid",
+      "name": "RowStride",
+      "linux_offset": 56,
+      "arm64_offset": 64,
+      "type": "u8",
+      "status": "PREDICTED",
+      "comment": "56 bytes per row (28 tiles \u00d7 2 bytes)"
+    },
+    {
+      "namespace": "PropTable",
+      "name": "PropertyCaps",
+      "linux_offset": 4420,
+      "arm64_offset": 4424,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "BST sentinel: property_id \u2192 max_value"
+    },
+    {
+      "namespace": "PropTable",
+      "name": "Region",
+      "linux_offset": 4688,
+      "arm64_offset": 4696,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "Start of property BST region"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "GMConstructor",
+      "linux_offset": 3096096,
+      "arm64_offset": 3096096,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_00304E20 \u2014 GameManager init"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "PacketDispatcher",
+      "linux_offset": 3127136,
+      "arm64_offset": 3127136,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_0030C760 \u2014 main packet loop"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "FindEntityByKey",
+      "linux_offset": 3130352,
+      "arm64_offset": 3130352,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "FUN_0030D3F0(gm, entity_key) \u2192 Container*"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "FindObjectByKey",
+      "linux_offset": 3130880,
+      "arm64_offset": 3130888,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "FUN_0030D600(gm, obj_key) \u2192 IO*"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "HandlerRegister",
+      "linux_offset": 3165152,
+      "arm64_offset": 3165164,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_00305BE0 \u2014 handler table setup"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "AppearanceUpdate",
+      "linux_offset": 3282768,
+      "arm64_offset": 3282780,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_00322750"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "EquipmentUpdate",
+      "linux_offset": 3283520,
+      "arm64_offset": 3283532,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_00322A40"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "EntityUpdate",
+      "linux_offset": 3284272,
+      "arm64_offset": 3284284,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_00322D30"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "EntitySpawn",
+      "linux_offset": 3286576,
+      "arm64_offset": 3286588,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_00323630"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "CombatDamage",
+      "linux_offset": 3416224,
+      "arm64_offset": 3416236,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_003520A0 \u2014 AddHP(target, -dmg)"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "CombatDamageCrit",
+      "linux_offset": 3416640,
+      "arm64_offset": 3416652,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_00352240 \u2014 crit damage"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "CombatHeal",
+      "linux_offset": 3417024,
+      "arm64_offset": 3417036,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_003523C0 \u2014 AddHP(target, +heal)"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "CombatApplyBuff",
+      "linux_offset": 3417984,
+      "arm64_offset": 3417996,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_00352780 \u2014 apply buff to entity"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "CombatHPMPDelta",
+      "linux_offset": 3419792,
+      "arm64_offset": 3419804,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_00352E90 \u2014 HP+MP regen tick"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "ChatRecvParse",
+      "linux_offset": 3679664,
+      "arm64_offset": 3679676,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_003925b0(ChatMgr, deserialized_msg) \u2014 parse+dispatch received chat"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "ChatDispatch",
+      "linux_offset": 3680416,
+      "arm64_offset": 3680428,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_003928a0(ChatMgr, ChannelObj) \u2014 dispatch to UI channels"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "ChatBuildSend",
+      "linux_offset": 3695792,
+      "arm64_offset": 3695804,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_003964b0(ChatMgr, packet, channel) \u2014 receive handler + send for area/party/world"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "ChatGetText",
+      "linux_offset": 3721232,
+      "arm64_offset": 3721244,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_0039c810(out_wstr, msg_obj) \u2014 extract full text from message blocks"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "ChatSendArea",
+      "linux_offset": 3733040,
+      "arm64_offset": 3733052,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_0048f630(MenuChat, text) \u2014 send area chat (via UI widget)"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "SceneTransition",
+      "linux_offset": 4247216,
+      "arm64_offset": 4247228,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_0041CEB0(sceneMgr, callback, sceneId) \u2014 SceneSet+ViewMode+ViewTransition+FormShow"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "ItemActionDispatch",
+      "linux_offset": 4473936,
+      "arm64_offset": 4473948,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_00454450(uiCtx, modifier) \u2014 item action dispatcher (0=drop, 1=use, 2=info)"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "ConnectToGameWorld",
+      "linux_offset": 4801216,
+      "arm64_offset": 4801228,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_004A42C0(viewCtrl) \u2014 caching + ViewMode + connect(sessionMgr, 0xD)"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "ViewCtrlAdvance",
+      "linux_offset": 4805520,
+      "arm64_offset": 4805532,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_004A5390(viewCtrl) \u2014 AVAN\u00c7AR/NEXT button handler (cleanup callbacks + ViewCtrlReset)"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "LoginWithCredentials",
+      "linux_offset": 4974640,
+      "arm64_offset": 4974652,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_004CE830(widget, email, password) \u2014 hash creds, store, connect(7), SceneTransition(5). FULL LOGIN."
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "ViewTransition",
+      "linux_offset": 5158144,
+      "arm64_offset": 5158156,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_004FB500(viewCtrl, sceneId, callback, ctx) \u2014 write sceneId to +0x3234"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "ViewCtrlReset",
+      "linux_offset": 5162640,
+      "arm64_offset": 5162652,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_004FC690(viewCtrl) \u2014 close popup + reset scene state"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "JogarHandler",
+      "linux_offset": 5552320,
+      "arm64_offset": 5552332,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_0055B8C0(widget) \u2014 login button handler"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "SelectCharConnect",
+      "linux_offset": 6081104,
+      "arm64_offset": 6081116,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_005DCA50(viewCtrl) \u2014 read charData from viewCtrl+0x497C/0x4980, set server_id+char_id, connect(2), SceneTransition(4)"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "QuestDialogOnButton",
+      "linux_offset": 7483200,
+      "arm64_offset": 7483212,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_00732f40(qpm)"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "ExitTableProcess",
+      "linux_offset": 8211408,
+      "arm64_offset": 8211420,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_007E5BD0 \u2014 process exit by type"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "ZoneTransition",
+      "linux_offset": 8223856,
+      "arm64_offset": 8223868,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_007E8C70 \u2014 full zone change"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "LoadZoneCollision",
+      "linux_offset": 8227600,
+      "arm64_offset": 8227612,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_007E9B10 \u2014 load collision from file"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "IsWalkable",
+      "linux_offset": 8232288,
+      "arm64_offset": 8232304,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "FUN_007EAD60(grid, pos) \u2192 bool"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "PathfindEntry",
+      "linux_offset": 8233888,
+      "arm64_offset": 8233908,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_007EB3A0(grid, start, end, result, flag)"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "PathfindAStar",
+      "linux_offset": 8236816,
+      "arm64_offset": 8236836,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_007EBF10(grid, start, end, cost_grid)"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "HasResItem",
+      "linux_offset": 8674464,
+      "arm64_offset": 8674488,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "FUN_00856CA0(mgr, 0x47) \u2192 bool"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "UseResItem",
+      "linux_offset": 8678208,
+      "arm64_offset": 8678236,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_00857B40(mgr, 0x47)"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "ItemsMgrUseItem",
+      "linux_offset": 8791952,
+      "arm64_offset": 8791980,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_00872790(itemsMgr, item_id, slot_index) \u2014 full use-item flow"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "FindSlotByType",
+      "linux_offset": 8798192,
+      "arm64_offset": 8798220,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_00873ff0(itemsMgr, type, subtype) \u2014 find slot by item type"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "LootPanelOpen",
+      "linux_offset": 8808416,
+      "arm64_offset": 8808444,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_008767E0(itemsMgr, flag) \u2014 open loot confirmation panel"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "MarketSearch",
+      "linux_offset": 8916592,
+      "arm64_offset": 8916620,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_00891E70"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "MarketBuy",
+      "linux_offset": 8916960,
+      "arm64_offset": 8916988,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_00891FE0"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "MarketSell",
+      "linux_offset": 8917152,
+      "arm64_offset": 8917180,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_008920A0"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "MarketCancel",
+      "linux_offset": 8917408,
+      "arm64_offset": 8917436,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_008921A0"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "AttackPacketBuild",
+      "linux_offset": 8941024,
+      "arm64_offset": 8941052,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "build+send attack packet (type=1 attack, type=2 walk_to_loot)"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "ActionPacketBuild",
+      "linux_offset": 8941264,
+      "arm64_offset": 8941292,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "build+send skill packet"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "InteractPacketBuild",
+      "linux_offset": 8941552,
+      "arm64_offset": 8941580,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "build+send interact packet (alive entities, type<4)"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "CorpseInteractBuild",
+      "linux_offset": 8941760,
+      "arm64_offset": 8941788,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "build+send corpse/object interact packet (type>=4, hardcoded type=3)"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "BuildMoveItemPkt",
+      "linux_offset": 8941968,
+      "arm64_offset": 8941996,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_00897190(packetQueue, item_id, from_slot, to_slot) \u2014 move item between slots (Svp opcode 0x0d)"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "BuildUseItemPacket",
+      "linux_offset": 8942080,
+      "arm64_offset": 8942108,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_00897200(packetQueue, item_id, slot_idx, targetKey) \u2014 build+send 0x9802"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "BuildDeleteItemPkt",
+      "linux_offset": 8942368,
+      "arm64_offset": 8942396,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_00897320(packetQueue, slot_idx, item_id) \u2014 delete/discard item (Svp opcode 0x0e)"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "ObjectInteractBuild",
+      "linux_offset": 8944688,
+      "arm64_offset": 8944716,
+      "type": "u16",
+      "status": "PREDICTED",
+      "comment": "FUN_00897c30: case 0x2716 loot/object packet (action=0x2E, objectKey u16)"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "LootPickupSlot",
+      "linux_offset": 8944912,
+      "arm64_offset": 8944940,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_00897D10(packetMgr, slotIdx, count) \u2014 pickup item from loot slot"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "QuestPacketSimple",
+      "linux_offset": 8945008,
+      "arm64_offset": 8945036,
+      "type": "u16",
+      "status": "PREDICTED",
+      "comment": "FUN_00897D70(packetMgr, u16 cmd) \u2014 simple quest/dialog packet"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "ConnectWrapperConnect",
+      "linux_offset": 9002416,
+      "arm64_offset": 9002444,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_008A5DB0(sessionMgr, mode) \u2014 start auth connection"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "SetAllegiance",
+      "linux_offset": 9110048,
+      "arm64_offset": 9110076,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_008C1220 \u2014 Container+0x130"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "SetHP",
+      "linux_offset": 9110176,
+      "arm64_offset": 9110204,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_008C12A0 \u2014 Container+0x134"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "SetHPMax",
+      "linux_offset": 9110224,
+      "arm64_offset": 9110252,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_008C12D0 \u2014 Container+0x138"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "SetMP",
+      "linux_offset": 9110608,
+      "arm64_offset": 9110636,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_008C1450 \u2014 Container+0x13C"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "SetMPMax",
+      "linux_offset": 9110656,
+      "arm64_offset": 9110684,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_008C1480 \u2014 Container+0x140"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "LocalMoveTo",
+      "linux_offset": 9116768,
+      "arm64_offset": 9116796,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_008C1C60(container, dest, flag) \u2014 client-only"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "SetFaction",
+      "linux_offset": 9117488,
+      "arm64_offset": 9117516,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_008C2F30 \u2014 Container+0x300"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "SetQuestIndicator",
+      "linux_offset": 9118464,
+      "arm64_offset": 9118492,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_008C3300 \u2014 Container+0x310 (0=none, 1=\"!\", 2=\"?\")"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "SetTarget",
+      "linux_offset": 9121088,
+      "arm64_offset": 9121116,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "set Container+0x2B8"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "ClearTarget",
+      "linux_offset": 9121328,
+      "arm64_offset": 9121356,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "clear Container+0x2B8/+0x2BC"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "GetEntityTile",
+      "linux_offset": 9132992,
+      "arm64_offset": 9133020,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "returns entity+8, updates tile hash"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "ClickDispatcher",
+      "linux_offset": 9138384,
+      "arm64_offset": 9138412,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "click handler dispatcher"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "GroundClick",
+      "linux_offset": 9138928,
+      "arm64_offset": 9138956,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_008C72F0(container) \u2014 intra-area move"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "BorderClick",
+      "linux_offset": 9139152,
+      "arm64_offset": 9139180,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_008C73D0(container) \u2014 border transition"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "LayerDown",
+      "linux_offset": 9139600,
+      "arm64_offset": 9139628,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_008C7590(container) \u2014 go down one layer"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "LayerUp",
+      "linux_offset": 9139968,
+      "arm64_offset": 9139996,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_008C7700(container) \u2014 go up one layer"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "ClickAttack",
+      "linux_offset": 9140336,
+      "arm64_offset": 9140364,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "click-to-attack (walk+attack+state)"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "SelectTarget",
+      "linux_offset": 9140560,
+      "arm64_offset": 9140588,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "use current skill on entity"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "InteractTarget",
+      "linux_offset": 9141216,
+      "arm64_offset": 9141244,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "interact/loot (walk+packet)"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "SetActionState",
+      "linux_offset": 9141536,
+      "arm64_offset": 9141564,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "set +0x144 based on state"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "CDStart",
+      "linux_offset": 9161712,
+      "arm64_offset": 9161744,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "FUN_008CCBF0(timer*, seconds) \u2192 timer[0]=sec*1000"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "SetClassId",
+      "linux_offset": 9207056,
+      "arm64_offset": 9207092,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_008D8D10 \u2014 Container+0x43D"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "OnLootReceived",
+      "linux_offset": 9288064,
+      "arm64_offset": 9288100,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_008EC980"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "OnEntityDead",
+      "linux_offset": 9289728,
+      "arm64_offset": 9289764,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_008ED000"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "QuestStageUpdate",
+      "linux_offset": 9338832,
+      "arm64_offset": 9338868,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_008F8FD0"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "QuestDialogConfirm",
+      "linux_offset": 9353488,
+      "arm64_offset": 9353524,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "FUN_008fb910(qpm, cmd)"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "GetSkillCooldown",
+      "linux_offset": 9420736,
+      "arm64_offset": 9420776,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "FUN_0090BFC0(skillsMgr, skillId) \u2192 u16 deciseconds"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "SkillTreeLookup",
+      "linux_offset": 9420896,
+      "arm64_offset": 9420944,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "FUN_0090C060(SM, skillId) \u2192 node+0x14 ptr (BST lookup)"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "GetSkillRange",
+      "linux_offset": 9421200,
+      "arm64_offset": 9421256,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "FUN_0090C190(SM, skillId) \u2192 range (multiplier*raw/100)"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "SetSkillAndAttack",
+      "linux_offset": 9424256,
+      "arm64_offset": 9424316,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "set skill + auto-repeat"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "SkillAutoRepeat",
+      "linux_offset": 9424496,
+      "arm64_offset": 9424556,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "auto-repeat dispatch"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "GetActiveSkillType",
+      "linux_offset": 9424848,
+      "arm64_offset": 9424912,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "FUN_0090CFD0(SM) \u2192 u16 skill_type from DataTable"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "UseSkillOnEntity",
+      "linux_offset": 9426480,
+      "arm64_offset": 9426548,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "skill on entity (internal)"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "UseSkillOnSelf",
+      "linux_offset": 9427088,
+      "arm64_offset": 9427160,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "FUN_0090D890(SM) \u2192 self-cast active skill (__regparm1)"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "UseSkillOnObject",
+      "linux_offset": 9427328,
+      "arm64_offset": 9427404,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "skill on object (internal)"
+    },
+    {
+      "namespace": "GhidraFunctions",
+      "name": "PakFileRead",
+      "linux_offset": 11330848,
+      "arm64_offset": 11330928,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "FUN_00ADE520(pakMgr, filename, outBuf) \u2192 char (0=fail). Hook to skip visual assets."
+    },
+    {
+      "namespace": "PropertyTree",
+      "name": "MarkerOff",
+      "linux_offset": 12,
+      "arm64_offset": 12,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "offset of marker within node"
+    },
+    {
+      "namespace": "PropertyTree",
+      "name": "NodeSize",
+      "linux_offset": 32,
+      "arm64_offset": 32,
+      "type": "u8",
+      "status": "PREDICTED",
+      "comment": "bytes per tree node"
+    },
+    {
+      "namespace": "PropertyTree",
+      "name": "Marker",
+      "linux_offset": 33,
+      "arm64_offset": 36,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "common marker value (also 0x31, 0x111)"
+    },
+    {
+      "namespace": "PropertyTree",
+      "name": "VT_Combat",
+      "linux_offset": 14296436,
+      "arm64_offset": 14296440,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "atk_magic, xp_max, percentages"
+    },
+    {
+      "namespace": "PropertyTree",
+      "name": "VT_Display",
+      "linux_offset": 14296460,
+      "arm64_offset": 14296464,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "oxygen, def_phys, dodge, etc."
+    },
+    {
+      "namespace": "PropertyTree",
+      "name": "VT_Regen",
+      "linux_offset": 14296532,
+      "arm64_offset": 14296536,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "hp_regen, mp_regen, small stats"
+    },
+    {
+      "namespace": "StatCache",
+      "name": "AtkPhysical",
+      "linux_offset": 0,
+      "arm64_offset": 0,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 flat"
+    },
+    {
+      "namespace": "StatCache",
+      "name": "AtkMagical",
+      "linux_offset": 4,
+      "arm64_offset": 4,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 flat"
+    },
+    {
+      "namespace": "StatCache",
+      "name": "DefMagicalFlat",
+      "linux_offset": 8,
+      "arm64_offset": 8,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 flat"
+    },
+    {
+      "namespace": "StatCache",
+      "name": "DefPhysicalFlat",
+      "linux_offset": 12,
+      "arm64_offset": 12,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 flat"
+    },
+    {
+      "namespace": "StatCache",
+      "name": "CritChance",
+      "linux_offset": 28,
+      "arm64_offset": 28,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 \u00d7100 (616 = 6.16%)"
+    },
+    {
+      "namespace": "StatCache",
+      "name": "Dodge",
+      "linux_offset": 32,
+      "arm64_offset": 32,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 \u00d7100"
+    },
+    {
+      "namespace": "StatCache",
+      "name": "Resilience",
+      "linux_offset": 40,
+      "arm64_offset": 40,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 \u00d7100"
+    },
+    {
+      "namespace": "StatCache",
+      "name": "Penetration",
+      "linux_offset": 48,
+      "arm64_offset": 48,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 \u00d7100"
+    },
+    {
+      "namespace": "StatCache",
+      "name": "Solidity",
+      "linux_offset": 64,
+      "arm64_offset": 64,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 \u00d7100"
+    },
+    {
+      "namespace": "StatCache",
+      "name": "HpRegen",
+      "linux_offset": 160,
+      "arm64_offset": 160,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 flat per 5s"
+    },
+    {
+      "namespace": "StatCache",
+      "name": "MpRegen",
+      "linux_offset": 164,
+      "arm64_offset": 164,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 flat per 5s"
+    },
+    {
+      "namespace": "SkillDef",
+      "name": "ParentPtr",
+      "linux_offset": 0,
+      "arm64_offset": 0,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr DataTable container pointer"
+    },
+    {
+      "namespace": "SkillDef",
+      "name": "SkillId",
+      "linux_offset": 4,
+      "arm64_offset": 8,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 skill ID (confirmed: matches tree key)"
+    },
+    {
+      "namespace": "SkillDef",
+      "name": "NameStringId",
+      "linux_offset": 8,
+      "arm64_offset": 12,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 string table ID for name"
+    },
+    {
+      "namespace": "SkillDef",
+      "name": "DescStringId",
+      "linux_offset": 12,
+      "arm64_offset": 16,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 string table ID for description"
+    },
+    {
+      "namespace": "SkillDef",
+      "name": "IconData",
+      "linux_offset": 16,
+      "arm64_offset": 20,
+      "type": "u16",
+      "status": "PREDICTED",
+      "comment": "u16 icon/anim data + u16 flags"
+    },
+    {
+      "namespace": "SkillDef",
+      "name": "SkillType",
+      "linux_offset": 20,
+      "arm64_offset": 24,
+      "type": "u16",
+      "status": "PREDICTED",
+      "comment": "u16 1=self, 2=conditional, 3=target, 6=conditional, 7=target+building, 8=conditional"
+    },
+    {
+      "namespace": "SkillDef",
+      "name": "SubField",
+      "linux_offset": 22,
+      "arm64_offset": 26,
+      "type": "u16",
+      "status": "PREDICTED",
+      "comment": "u16 max_targets or sub-type"
+    },
+    {
+      "namespace": "SkillDef",
+      "name": "EffectParams1",
+      "linux_offset": 24,
+      "arm64_offset": 32,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 f32[] primary effect values (damage/heal per level)"
+    },
+    {
+      "namespace": "SkillDef",
+      "name": "EffectParams1Sz",
+      "linux_offset": 28,
+      "arm64_offset": 40,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 byte count of effect_params1 array"
+    },
+    {
+      "namespace": "SkillDef",
+      "name": "CooldownArray",
+      "linux_offset": 32,
+      "arm64_offset": 48,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 u16[] cooldowns per level (in seconds)"
+    },
+    {
+      "namespace": "SkillDef",
+      "name": "CooldownArraySz",
+      "linux_offset": 36,
+      "arm64_offset": 56,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 byte count (\u00f72 = num levels)"
+    },
+    {
+      "namespace": "SkillDef",
+      "name": "EffectParams2",
+      "linux_offset": 40,
+      "arm64_offset": 64,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 f32[] secondary effect values"
+    },
+    {
+      "namespace": "SkillDef",
+      "name": "EffectParams2Sz",
+      "linux_offset": 44,
+      "arm64_offset": 72,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 byte count"
+    },
+    {
+      "namespace": "SkillDef",
+      "name": "RangeArray",
+      "linux_offset": 48,
+      "arm64_offset": 80,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 u16[] ranges per level (0 = self/melee)"
+    },
+    {
+      "namespace": "SkillDef",
+      "name": "RangeArraySz",
+      "linux_offset": 52,
+      "arm64_offset": 88,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 byte count (\u00f72 = num levels)"
+    },
+    {
+      "namespace": "SkillDef",
+      "name": "BaseCooldown",
+      "linux_offset": 56,
+      "arm64_offset": 92,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 base/default cooldown value"
+    },
+    {
+      "namespace": "SkillNode",
+      "name": "Parent",
+      "linux_offset": 0,
+      "arm64_offset": 0,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr"
+    },
+    {
+      "namespace": "SkillNode",
+      "name": "Left",
+      "linux_offset": 4,
+      "arm64_offset": 8,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr"
+    },
+    {
+      "namespace": "SkillNode",
+      "name": "Right",
+      "linux_offset": 8,
+      "arm64_offset": 16,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr"
+    },
+    {
+      "namespace": "SkillNode",
+      "name": "Color",
+      "linux_offset": 12,
+      "arm64_offset": 24,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 0=black, 1=red"
+    },
+    {
+      "namespace": "SkillNode",
+      "name": "SkillId",
+      "linux_offset": 16,
+      "arm64_offset": 28,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 skill ID (tree key)"
+    },
+    {
+      "namespace": "SkillNode",
+      "name": "SkillDefPtr",
+      "linux_offset": 20,
+      "arm64_offset": 32,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "ptr \u2192 SkillDef in DataTable"
+    },
+    {
+      "namespace": "SkillNode",
+      "name": "SkillLevel",
+      "linux_offset": 24,
+      "arm64_offset": 40,
+      "type": "u8",
+      "status": "PREDICTED",
+      "comment": "u8 current learned level"
+    },
+    {
+      "namespace": "SkillNode",
+      "name": "RemainingCdMs",
+      "linux_offset": 28,
+      "arm64_offset": 44,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 remaining cooldown (ms, 0=ready, decrements per frame)"
+    },
+    {
+      "namespace": "SkillNode",
+      "name": "BaseCdMs",
+      "linux_offset": 32,
+      "arm64_offset": 48,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 base cooldown duration (ms, static from DataTable)"
+    },
+    {
+      "namespace": "SkillNode",
+      "name": "OverrideFlag",
+      "linux_offset": 46,
+      "arm64_offset": 62,
+      "type": "u8",
+      "status": "PREDICTED",
+      "comment": "u8 if set, use override cooldown"
+    },
+    {
+      "namespace": "SkillNode",
+      "name": "CdOverride",
+      "linux_offset": 48,
+      "arm64_offset": 64,
+      "type": "u16",
+      "status": "PREDICTED",
+      "comment": "u16 cooldown override (ms)"
+    },
+    {
+      "namespace": "SkillNode",
+      "name": "RangeOverrideF",
+      "linux_offset": 50,
+      "arm64_offset": 66,
+      "type": "u8",
+      "status": "PREDICTED",
+      "comment": "u8 if set, use override range"
+    },
+    {
+      "namespace": "SkillNode",
+      "name": "RangeOverride",
+      "linux_offset": 52,
+      "arm64_offset": 68,
+      "type": "u16",
+      "status": "PREDICTED",
+      "comment": "u16 range override"
+    },
+    {
+      "namespace": "ItemDef",
+      "name": "ItemId",
+      "linux_offset": 4,
+      "arm64_offset": 4,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 item ID (confirmed: HotkeysPanel reads *(def+4))"
+    },
+    {
+      "namespace": "ItemDef",
+      "name": "ItemType",
+      "linux_offset": 8,
+      "arm64_offset": 8,
+      "type": "u8",
+      "status": "PREDICTED",
+      "comment": "u8 item type (0xC=HP potion, 0xD=MP potion, etc.)"
+    },
+    {
+      "namespace": "ItemDef",
+      "name": "ItemSubType",
+      "linux_offset": 9,
+      "arm64_offset": 9,
+      "type": "u8",
+      "status": "PREDICTED",
+      "comment": "u8 sub-type (for type 0x26 branching)"
+    },
+    {
+      "namespace": "ItemDef",
+      "name": "WeaponSpeedRaw",
+      "linux_offset": 40,
+      "arm64_offset": 40,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 weapon attack speed (raw units, /578 \u2248 seconds)"
+    },
+    {
+      "namespace": "WorldManager",
+      "name": "ZoneId",
+      "linux_offset": 36,
+      "arm64_offset": 36,
+      "type": "u16",
+      "status": "PREDICTED",
+      "comment": "s16 current zone_id"
+    },
+    {
+      "namespace": "WorldManager",
+      "name": "LayerId",
+      "linux_offset": 38,
+      "arm64_offset": 38,
+      "type": "u16",
+      "status": "PREDICTED",
+      "comment": "s16 current layer"
+    },
+    {
+      "namespace": "WorldManager",
+      "name": "ExitTableMain",
+      "linux_offset": 1868,
+      "arm64_offset": 1872,
+      "type": "ptr",
+      "status": "PREDICTED",
+      "comment": "arr primary exit table (8B entries: ptr+callback)"
+    },
+    {
+      "namespace": "WorldManager",
+      "name": "ExitTableAttack",
+      "linux_offset": 4780,
+      "arm64_offset": 4788,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "arr attack exit table"
+    },
+    {
+      "namespace": "WorldManager",
+      "name": "ExitTableSelect",
+      "linux_offset": 9076,
+      "arm64_offset": 9084,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "arr select exit table"
+    },
+    {
+      "namespace": "WorldManager",
+      "name": "ExitTableBorder",
+      "linux_offset": 9948,
+      "arm64_offset": 9956,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "arr border exit table"
+    },
+    {
+      "namespace": "WorldManager",
+      "name": "ExitTableLayer",
+      "linux_offset": 10820,
+      "arm64_offset": 10828,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "arr layer transition table"
+    },
+    {
+      "namespace": "WorldManager",
+      "name": "ExitPending",
+      "linux_offset": 18648,
+      "arm64_offset": 18656,
+      "type": "u8",
+      "status": "PREDICTED",
+      "comment": "u8 exit is pending"
+    },
+    {
+      "namespace": "WorldManager",
+      "name": "ExitType",
+      "linux_offset": 18652,
+      "arm64_offset": 18660,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 action code (10000-10005)"
+    },
+    {
+      "namespace": "WorldManager",
+      "name": "ExitParam",
+      "linux_offset": 18656,
+      "arm64_offset": 18664,
+      "type": "u32",
+      "status": "PREDICTED",
+      "comment": "u32 exit parameter"
+    }
+  ]
+}
